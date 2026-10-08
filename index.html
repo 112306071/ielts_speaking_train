@@ -1,0 +1,2271 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>IELTS Speaking Practice｜雅思口說練習</title>
+<meta name="description" content="IELTS 口說 Part 2、Part 3 練習：不重複題庫、即時逐字稿、每題的思考角度與加分詞彙，以及通用的表達工具箱。">
+<meta name="theme-color" content="#3447c9">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%233447c9'/%3E%3Cpath d='M9 12a7 7 0 0 1 14 0v3a7 7 0 0 1-14 0z' fill='none' stroke='%23fff' stroke-width='2.4'/%3E%3Cpath d='M16 22v4m-4 0h8' stroke='%23fff' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#f4f2ec; --surface:#ffffff; --surface2:#faf9f5; --ink:#1b2130; --muted:#636b7d; --line:#e2dfd5;
+  --accent:#3447c9; --accent-ink:#ffffff; --accent-soft:#e6e9fb;
+  --good:#0c7a5c; --good-bg:#d6f1e6; --tool:#3447c9; --tool-bg:#e3e7ff;
+  --warn:#a85a06; --warn-bg:#fcebc9; --bad:#c0362c; --bad-bg:#fde3e0;
+  --shadow:0 1px 2px rgba(27,33,48,.05),0 8px 24px rgba(27,33,48,.06);
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Noto Serif TC",serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#10131a; --surface:#191e29; --surface2:#151a24; --ink:#e7e9ef; --muted:#98a1b4; --line:#2a3141;
+    --accent:#8fa0ff; --accent-ink:#0d1020; --accent-soft:#222a52;
+    --good:#5fd3ae; --good-bg:#143a30; --tool:#a9b6ff; --tool-bg:#262f5f;
+    --warn:#f0b35a; --warn-bg:#3f2f10; --bad:#ff9087; --bad-bg:#46201c;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.25);
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.65}
+[lang=en]{font-family:var(--serif)}
+h1,h2,h3,h4,p,ul{margin:0}
+ul{padding-left:1.2em}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,a:focus-visible,summary:focus-visible,textarea:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+[hidden]{display:none!important}
+
+/* top bar */
+.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top-in{max-width:820px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;background:none;border:0;padding:4px 0;font-weight:700;letter-spacing:.01em}
+.brand i{width:26px;height:26px;border-radius:8px;background:var(--accent);display:grid;place-items:center;color:var(--accent-ink);font-style:normal;font-size:14px;font-family:var(--serif)}
+.nav{display:flex;gap:2px}
+.nav button{background:none;border:0;padding:7px 12px;border-radius:999px;color:var(--muted);font-size:14.5px}
+.nav button:hover{color:var(--ink)}
+.nav button.on{background:var(--surface);color:var(--ink);box-shadow:inset 0 0 0 1px var(--line);font-weight:600}
+
+.wrap{max-width:820px;margin:0 auto;padding:24px 16px 120px}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.fine{font-size:13px;color:var(--muted)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+.stack>*+*{margin-top:16px}
+.pill{display:inline-block;font-size:12px;padding:2px 10px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-weight:600}
+
+/* buttons */
+.btn{border:1px solid var(--line);background:var(--surface);padding:10px 18px;border-radius:10px;font-weight:600;font-size:15px;transition:transform .08s,background .15s}
+.btn:hover{background:var(--surface2)}
+.btn:active{transform:translateY(1px)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn.primary:hover{filter:brightness(1.07);background:var(--accent)}
+.btn.ghost{background:none;border-color:transparent;color:var(--muted)}
+.btn.ghost:hover{color:var(--ink);background:var(--surface)}
+.btn.danger{color:var(--bad)}
+.btn.sm{padding:6px 12px;font-size:13.5px;border-radius:8px}
+.btn.big{padding:14px 28px;font-size:17px}
+.btn.stop{background:var(--bad);border-color:var(--bad);color:#fff}
+.btn.stop:hover{background:var(--bad);filter:brightness(1.08)}
+.actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+
+/* home */
+.hero{padding:22px 0 8px}
+.hero h1{font-size:clamp(26px,5vw,36px);line-height:1.25;margin:10px 0 10px;letter-spacing:-.01em}
+.hero .lead{color:var(--muted);font-size:17px;max-width:34em}
+.modes{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.mode{text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:8px;transition:transform .12s,border-color .12s}
+.mode:hover{transform:translateY(-2px);border-color:var(--accent)}
+.mode h2{font-size:19px;line-height:1.35}
+.mode p{color:var(--muted);font-size:14.5px;flex:1}
+.mode .go{color:var(--accent);font-weight:700;margin-top:6px}
+.mode .pill{align-self:flex-start}
+.banner{border-radius:12px;padding:12px 16px;font-size:14.5px;border:1px solid}
+.banner.warn{background:var(--warn-bg);border-color:color-mix(in srgb,var(--warn) 35%,transparent);color:var(--ink)}
+.banner.bad{background:var(--bad-bg);border-color:color-mix(in srgb,var(--bad) 35%,transparent)}
+.prog{display:grid;gap:12px}
+.prog-row{display:grid;grid-template-columns:64px 1fr auto;gap:12px;align-items:center;font-size:14px}
+.meter{height:8px;background:var(--line);border-radius:99px;overflow:hidden}
+.meter i{display:block;height:100%;background:var(--accent);border-radius:99px}
+.steps{counter-reset:s;list-style:none;padding:0;display:grid;gap:10px}
+.steps li{counter-increment:s;display:grid;grid-template-columns:28px 1fr;gap:10px;font-size:15px}
+.steps li:before{content:counter(s);width:24px;height:24px;border-radius:50%;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;font-size:13px;font-weight:700;margin-top:2px}
+h3.sec{font-size:15px;margin-bottom:12px}
+
+/* practice */
+.phead{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px}
+.cue{background:var(--surface);border:1px solid var(--line);border-top:5px solid var(--accent);border-radius:14px;padding:20px 22px 22px;box-shadow:var(--shadow)}
+.cue header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.cue h2{font-size:clamp(20px,3.6vw,25px);line-height:1.35;font-weight:600}
+.cue .say{margin:14px 0 6px;color:var(--muted);font-family:var(--serif);font-style:italic}
+.cue ul{font-size:17px;display:grid;gap:3px}
+.cue.compact{padding:14px 18px 16px;border-top-width:3px}
+.cue.compact h2{font-size:18px}
+.cue.compact ul{font-size:15px}
+.cue.compact .say{margin:8px 0 4px;font-size:14px}
+.qcard{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:14px;padding:18px 22px;box-shadow:var(--shadow)}
+.qcard h2{font-size:clamp(19px,3.4vw,24px);line-height:1.4;font-weight:600;margin-top:8px}
+.qcard .from{margin-top:10px;font-size:13px;color:var(--muted)}
+
+.timer-box{text-align:center;padding:10px 0 4px}
+.timer{font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:clamp(44px,11vw,68px);font-weight:600;letter-spacing:-.02em;line-height:1}
+.timer.warn{color:var(--warn)}
+.timer-sub{color:var(--muted);font-size:14px;margin-top:6px}
+.bar{height:6px;background:var(--line);border-radius:99px;overflow:hidden;margin-top:12px}
+.bar i{display:block;height:100%;width:0;background:var(--accent);border-radius:99px;transition:width .2s linear}
+.bar.warn i{background:var(--warn)}
+.rec-line{display:flex;align-items:center;justify-content:center;gap:8px;font-size:14px;color:var(--muted);min-height:24px}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--muted)}
+.dot.on{background:var(--bad);animation:pulse 1.2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--bad) 60%,transparent)}70%{box-shadow:0 0 0 9px transparent}100%{box-shadow:0 0 0 0 transparent}}
+@media (prefers-reduced-motion:reduce){.dot.on{animation:none}.mode,.btn,.bar i{transition:none}}
+.live{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px;min-height:150px;max-height:300px;overflow:auto;font-family:var(--serif);font-size:18px;line-height:1.7}
+.live .ph{color:var(--muted);font-family:var(--sans);font-size:15px}
+.live .int{color:var(--muted)}
+textarea{width:100%;font:inherit;color:inherit;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;resize:vertical;line-height:1.6}
+textarea.en{font-family:var(--serif);font-size:17px}
+.notes-view{background:var(--surface2);border:1px dashed var(--line);border-radius:12px;padding:10px 14px;font-size:14.5px;white-space:pre-wrap}
+.notes-view b{display:block;font-size:12px;color:var(--muted);letter-spacing:.08em;margin-bottom:2px}
+
+/* result */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.stat b{display:block;font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:26px;line-height:1.2}
+.stat span{font-size:12.5px;color:var(--muted)}
+.stat em{display:block;font-style:normal;font-size:12px;margin-top:2px;color:var(--muted)}
+.stat em.ok{color:var(--good)} .stat em.warn{color:var(--warn)}
+.tscript{font-family:var(--serif);font-size:18px;line-height:1.9;white-space:pre-wrap;word-break:break-word}
+.tscript.empty{font-family:var(--sans);font-size:15px;color:var(--muted)}
+.m-vocab{background:var(--good-bg);color:var(--good);border-radius:4px;padding:1px 3px;font-weight:600}
+.m-tool{background:var(--tool-bg);color:var(--tool);border-radius:4px;padding:1px 3px;font-weight:600}
+.m-filler{text-decoration:underline wavy var(--bad);text-underline-offset:4px;color:var(--bad)}
+.m-soft{text-decoration:underline dotted var(--warn);text-decoration-thickness:2px;text-underline-offset:4px}
+.m-shallow{border-bottom:2px dashed var(--muted)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12.5px;color:var(--muted);margin-top:12px;padding-top:10px;border-top:1px solid var(--line)}
+.legend span{font-family:var(--sans);font-weight:500}
+.card-h{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}
+.card-h h3{font-size:15px}
+.card-h .count{font-family:var(--mono);font-size:14px;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-family:var(--serif);font-size:15px;padding:4px 12px;border-radius:999px;border:1px solid var(--line);color:var(--muted);background:var(--surface2)}
+.chip.on{background:var(--good-bg);border-color:transparent;color:var(--good);font-weight:600}
+.chip.tool{background:var(--tool-bg);border-color:transparent;color:var(--tool);font-weight:600}
+.shrow{display:grid;grid-template-columns:auto 1fr auto;gap:6px 12px;align-items:center;padding:10px 0;border-top:1px solid var(--line)}
+.card-h+.shrow{border-top:0;padding-top:2px}
+.shrow .w{font-family:var(--serif);font-size:17px;font-weight:600}
+.shrow .w small{font-family:var(--mono);font-size:13px;color:var(--warn);margin-left:6px;font-weight:600}
+.shrow .alts{font-size:14.5px;color:var(--muted)}
+.shrow .alts b{font-family:var(--serif);color:var(--ink);font-weight:600}
+
+/* hints */
+details.hint,details.tcat,details.hist{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+details>summary{list-style:none;cursor:pointer;padding:13px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-weight:600}
+details>summary::-webkit-details-marker{display:none}
+details>summary:after{content:"＋";color:var(--muted);font-weight:400;flex:none}
+details[open]>summary:after{content:"－"}
+details>summary small{font-weight:400;color:var(--muted);font-size:13px;margin-left:auto;text-align:right}
+.hint-body,.tbody{padding:2px 18px 18px;border-top:1px solid var(--line)}
+.hint-body h4{font-size:12.5px;letter-spacing:.1em;color:var(--muted);margin:16px 0 6px}
+.hint-body ul{display:grid;gap:5px;font-size:15px}
+.hint-body p{font-size:15px}
+.starters{list-style:none;padding:0}
+.starters li{font-size:16.5px;padding:6px 12px;background:var(--surface2);border-left:3px solid var(--accent);border-radius:0 8px 8px 0}
+.vlist{display:grid}
+.vrow{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:start;padding:9px 0;border-top:1px solid var(--line)}
+.vrow:first-child{border-top:0}
+.vrow b{font-size:17px}
+.vrow .pos{font-size:12.5px;color:var(--muted);font-style:italic;margin:0 6px 0 4px;font-family:var(--serif)}
+.vrow .zh{font-size:14.5px}
+.vrow .ex{color:var(--muted);font-size:15px;line-height:1.5;margin-top:1px}
+.vrow .src{font-size:12px;color:var(--muted);margin-top:3px}
+.star{background:none;border:0;font-size:20px;line-height:1;padding:6px;color:var(--muted);border-radius:8px}
+.star:hover{background:var(--surface2)}
+.star.on{color:#e0a100}
+.tcat summary{flex-wrap:wrap}
+.tcat summary b{font-size:16px}
+.weak{font-size:14px;color:var(--muted);margin:12px 0 2px}
+.weak span{font-family:var(--serif);text-decoration:line-through;margin-right:8px;color:var(--bad)}
+.tip{font-size:14px;background:var(--warn-bg);border-radius:10px;padding:10px 14px;margin-top:10px}
+.guide h3{font-size:17px;margin-bottom:10px}
+.guide ul{display:grid;gap:8px;font-size:15px}
+.guide .demo{font-family:var(--serif);font-size:16.5px;background:var(--surface2);border-radius:10px;padding:12px 14px;margin-top:10px;line-height:1.75}
+.guide .demo mark{background:var(--accent-soft);color:var(--accent);font-family:var(--sans);font-size:11.5px;font-weight:700;padding:1px 6px;border-radius:5px;margin:0 2px;white-space:nowrap}
+.flow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:14.5px;margin-top:4px}
+.flow span{background:var(--accent-soft);color:var(--accent);padding:3px 10px;border-radius:8px;font-weight:600}
+.flow i{color:var(--muted);font-style:normal}
+
+/* drawer */
+.fab{position:fixed;right:16px;bottom:20px;z-index:25;background:var(--ink);color:var(--bg);border:0;border-radius:999px;padding:12px 18px;font-weight:700;font-size:14.5px;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+.scrim{position:fixed;inset:0;background:rgba(10,12,20,.45);z-index:40}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(440px,100%);background:var(--bg);z-index:41;display:flex;flex-direction:column;box-shadow:-8px 0 30px rgba(0,0,0,.2)}
+.drawer-h{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;border-bottom:1px solid var(--line)}
+.drawer-h h2{font-size:17px}
+.drawer-b{overflow:auto;padding:14px 14px 40px;display:grid;gap:10px;align-content:start}
+
+/* vocab + history */
+.tools-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.tools-row input[type=search]{flex:1;min-width:180px;font:inherit;color:inherit;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:9px 14px}
+.hide-zh .zh{background:var(--line);color:transparent;border-radius:4px;cursor:pointer;user-select:none}
+.hide-zh .zh.show{background:none;color:inherit}
+.empty{text-align:center;color:var(--muted);padding:40px 16px}
+.hist summary .meta{font-weight:400;font-size:13px;color:var(--muted);display:block}
+.hist summary .ttl{font-family:var(--serif);font-size:16.5px;display:block;line-height:1.4}
+.hist-body{padding:4px 18px 18px;border-top:1px solid var(--line);display:grid;gap:16px}
+.hitem h4{font-family:var(--serif);font-size:16px;font-weight:600;margin:12px 0 4px}
+.hitem .mini{font-family:var(--mono);font-size:12.5px;color:var(--muted);margin-bottom:6px}
+.sumrow{display:grid;grid-template-columns:1fr auto;gap:4px 14px;padding:12px 0;border-top:1px solid var(--line)}
+.sumrow:first-of-type{border-top:0}
+.sumrow .qq{font-family:var(--serif);font-size:16px}
+.sumrow .nums{font-family:var(--mono);font-size:13px;color:var(--muted);white-space:nowrap;text-align:right}
+
+#toast{position:fixed;left:50%;bottom:84px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:999px;font-size:14.5px;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:60;max-width:calc(100% - 32px);text-align:center}
+#toast.on{opacity:1;transform:translateX(-50%)}
+
+@media (max-width:640px){
+  .wrap{padding:18px 16px 150px}
+  .top{backdrop-filter:none;background:var(--bg)}
+  .top-in{padding:8px 16px}
+  .nav{position:fixed;left:0;right:0;bottom:0;background:var(--surface);border-top:1px solid var(--line);justify-content:space-around;padding:6px 8px calc(6px + env(safe-area-inset-bottom));z-index:30}
+  .nav button{flex:1;padding:9px 4px;border-radius:10px;font-size:14px}
+  .modes{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr 1fr}
+  .fab{bottom:calc(70px + env(safe-area-inset-bottom))}
+  #toast{bottom:136px}
+  .actions .btn{flex:1 1 auto}
+  details>summary small{display:none}
+  .shrow{grid-template-columns:1fr auto}
+  .shrow .alts{grid-column:1/-1;grid-row:2}
+  .sumrow{grid-template-columns:1fr}
+  .sumrow .nums{text-align:left}
+}
+</style>
+</head>
+<body>
+<header class="top"><div class="top-in">
+  <button class="brand" data-act="nav" data-to="home" aria-label="回首頁"><i>S</i><span>IELTS Speaking Practice</span></button>
+  <nav class="nav" aria-label="主選單">
+    <button data-act="nav" data-to="home">練習</button>
+    <button data-act="nav" data-to="toolbox">工具箱</button>
+    <button data-act="nav" data-to="vocab">單字本</button>
+    <button data-act="nav" data-to="history">歷史</button>
+  </nav>
+</div></header>
+<main class="wrap" id="app"></main>
+<button class="fab" id="fab" data-act="tool" hidden>表達工具箱</button>
+<div class="scrim" id="scrim" data-act="closeDrawer" hidden></div>
+<aside class="drawer" id="drawer" aria-label="表達工具箱" hidden>
+  <div class="drawer-h"><h2>表達工具箱</h2><button class="btn sm" data-act="closeDrawer">關閉</button></div>
+  <div class="drawer-b" id="drawerBody"></div>
+</aside>
+<div id="toast" role="status" aria-live="polite"></div>
+<noscript><p style="padding:24px">這個網頁需要開啟 JavaScript 才能使用。</p></noscript>
+<script>
+'use strict';
+/* ================= 題庫：40 張 Part 2 題卡，每張 4 題 Part 3 =================
+   欄位：t 題目、p 要點、a 思考角度、d 加深度的技巧、v 加分詞彙 [詞, 詞性, 中文, 例句]、s 參考開頭、q 延伸的 Part 3 */
+const BANK = [];
+BANK.push(
+{id:"c01",cat:"person",t:"Describe a person who has influenced you.",
+ p:["who this person is","how you know them","what they have done","and explain how they have influenced you."],
+ a:["挑一個具體事件，而不是只列形容詞：他在某個時刻做了什麼、說了什麼。","講「之前的我」和「之後的我」：這個人改變了你哪個習慣或想法。","承認複雜面：也許當時你不認同，後來才懂。"],
+ d:"不要停在 She is kind and hard-working。往下一層：Her attitude made me realize that…，把人物特質連到你自己的改變。",
+ v:[["role model","n.","榜樣","She has been a real role model for me ever since high school."],
+    ["look up to","phr. v.","敬重、仰慕","I've always looked up to my uncle because of the way he treats people."],
+    ["have a profound impact on","phr.","對…有深遠影響","Her advice had a profound impact on the way I deal with failure."],
+    ["shape who I am","phr.","塑造了我這個人","Those conversations really shaped who I am today."],
+    ["lead by example","phr.","以身作則","He never lectured us; he simply led by example."],
+    ["down-to-earth","adj.","務實、沒有架子","Despite her success, she's incredibly down-to-earth."]],
+ s:["The person who immediately springs to mind is…","What I admire most about her is not what she achieved, but how she…"],
+ q:[{t:"What kind of people tend to influence young people the most nowadays?",
+     a:["比較父母老師與網紅名人：影響的方式不同，一個是日常相處，一個是螢幕上的形象。"],
+     v:[["peer pressure","n.","同儕壓力","Peer pressure plays a huge role during the teenage years."],["influencer","n.","網紅","A lot of teenagers model themselves on an influencer they follow."],["impressionable","adj.","易受影響的","Kids at that age are very impressionable."]],
+     s:"I'd say it has shifted quite a bit over the last decade or so…"},
+    {t:"Do you think parents or teachers have more influence on children?",
+     a:["用「階段」回答：幼年是父母，青春期老師與同儕比重上升。避免硬選一邊。"],
+     v:[["formative years","n.","性格形成的關鍵時期","Parents matter most during a child's formative years."],["instill values","phr.","灌輸價值觀","Parents instill values long before a child starts school."],["authority figure","n.","權威人物","Teachers are often the first authority figures outside the family."]],
+     s:"It really depends on the stage of life we're talking about…"},
+    {t:"Can famous people be good role models?",
+     a:["兩面都講：名人有能見度可以帶動好行為，但我們看到的是包裝過的形象。各舉一例。"],
+     v:[["in the public eye","phr.","在公眾目光下","People in the public eye are watched all the time."],["set a good example","phr.","樹立好榜樣","Athletes can set a good example by staying humble."],["carefully curated","adj.","精心包裝過的","What we see online is a carefully curated image."]],
+     s:"To some extent, yes, although I'd be a bit cautious about…"},
+    {t:"How has technology changed the way people influence each other?",
+     a:["過去和現在對比：影響力從身邊的人擴大到素未謀面的人，速度更快但也更表面。"],
+     v:[["go viral","phr.","爆紅","A single video can go viral overnight and change how people think."],["word of mouth","n.","口耳相傳","In the past, ideas spread mainly by word of mouth."],["echo chamber","n.","同溫層","Algorithms can trap people in an echo chamber."]],
+     s:"Compared with my parents' generation, the biggest difference is…"}]},
+
+{id:"c02",cat:"person",t:"Describe an older person you admire.",
+ p:["who this person is","how you know them","what they are like","and explain why you admire them."],
+ a:["講他經歷過的時代或困難，以及他怎麼面對，這比「他很慈祥」有深度。","對比世代：他有什麼是你這一代比較缺少的，例如耐心、節儉、韌性。"],
+ d:"從外在描述走到價值觀：What strikes me is not his age but his outlook on life…，再接一句你從中學到什麼。",
+ v:[["wealth of experience","n.","豐富的經驗","My grandfather has a wealth of experience to draw on."],
+    ["go through hardship","phr.","經歷艱苦","His generation went through hardship that I can hardly imagine."],
+    ["resilient","adj.","有韌性的","She's one of the most resilient people I know."],
+    ["set in their ways","idiom","固執、習慣難改","Unlike many people his age, he isn't set in his ways."],
+    ["young at heart","idiom","心態年輕","She's nearly eighty but still very young at heart."],
+    ["pass down","phr. v.","傳承","He loves passing down family stories to the grandchildren."]],
+ s:["I'd like to talk about my grandmother, who is well into her seventies but…","What I find remarkable about him is…"],
+ q:[{t:"What can young people learn from older people?",
+     a:["具體化：不是只說「經驗」，而是哪種經驗，例如處理失敗、人際關係、金錢觀。"],
+     v:[["life lesson","n.","人生道理","Older relatives can teach us life lessons you won't find in textbooks."],["in hindsight","phr.","事後回想","They can tell you what, in hindsight, really mattered."],["put things in perspective","phr.","用更宏觀的角度看事情","Talking to my grandmother always puts things in perspective."]],
+     s:"Quite a lot, actually. The first thing that comes to mind is…"},
+    {t:"Why do some older people find it hard to adapt to new technology?",
+     a:["原因分層：不是「不會」，而是沒有需求、怕出錯、介面沒考慮到他們。可以順便提解方。"],
+     v:[["tech-savvy","adj.","精通科技的","My parents aren't exactly tech-savvy, but they manage."],["steep learning curve","n.","陡峭的學習曲線","Smartphones have a steep learning curve for some elderly users."],["keep up with","phr. v.","跟上","It's hard to keep up with how fast apps change."]],
+     s:"I think it mostly comes down to…"},
+    {t:"Should older people continue working after retirement age?",
+     a:["看健康與意願。個人層面（成就感）與社會層面（勞動力、年輕人的機會）都談。"],
+     v:[["sense of purpose","n.","目標感、人生意義","Work gives many people a sense of purpose."],["aging population","n.","高齡化人口","With an aging population, we may not have much choice."],["make way for","phr.","讓位給","Some argue they should make way for younger workers."]],
+     s:"It depends on the individual, but on the whole I'd say…"},
+    {t:"How are elderly people treated in your country compared with the past?",
+     a:["過去（多代同堂、孝道）對比現在（小家庭、長照機構）。用 tend to，避免下絕對結論。"],
+     v:[["extended family","n.","大家庭","People used to live in extended families under one roof."],["nursing home","n.","養老院","More families are now turning to nursing homes."],["filial duty","n.","孝道、子女的責任","Looking after your parents is still seen as a filial duty."]],
+     s:"Traditionally, … but these days things are gradually changing."}]},
+
+{id:"c03",cat:"person",t:"Describe a friend you enjoy spending time with.",
+ p:["who this friend is","how you met","what you usually do together","and explain why you enjoy their company."],
+ a:["講一個只有你們懂的默契或習慣，比列舉活動更生動。","談這段友誼為什麼能維持：共同的價值觀、互補的個性、彼此說真話。"],
+ d:"把 We have fun together 升級成 What I value is that I can be completely myself around her，講友誼帶給你的東西。",
+ v:[["hit it off","idiom","一見如故","We hit it off straight away on the first day of university."],
+    ["have a lot in common","phr.","有很多共同點","We have a lot in common, especially our taste in music."],
+    ["on the same wavelength","idiom","頻率相同、很合拍","We're on the same wavelength, so I never have to explain myself."],
+    ["through thick and thin","idiom","同甘共苦","She has stuck by me through thick and thin."],
+    ["catch up","phr. v.","敘舊、聊近況","We try to catch up over coffee every couple of weeks."],
+    ["lose touch","phr.","失去聯絡","Unlike most of my school friends, we never lost touch."]],
+ s:["I'd like to tell you about a close friend of mine called…","The thing I appreciate most about him is…"],
+ q:[{t:"What do you think makes a good friend?",
+     a:["挑一到兩個特質深入講並舉例，不要列一長串形容詞。"],
+     v:[["trustworthy","adj.","值得信賴的","Above all, a good friend has to be trustworthy."],["be there for","phr.","在…需要時陪伴","A real friend will be there for you when things go wrong."],["brutally honest","adj.","毫不留情地誠實","I appreciate friends who are brutally honest with me."]],
+     s:"For me, the most important quality has to be…"},
+    {t:"Is it easier to make friends as a child or as an adult?",
+     a:["比較環境：小時候有學校這個天然場域；成人時間少、戒心高，但友誼更有選擇性。"],
+     v:[["strike up a conversation","phr.","主動攀談","Kids can strike up a conversation with anyone in the playground."],["social circle","n.","社交圈","As adults, our social circle tends to shrink."],["guarded","adj.","有戒心的","Adults are generally more guarded with strangers."]],
+     s:"Definitely as a child, and I think the main reason is…"},
+    {t:"Can online friendships be as strong as face-to-face ones?",
+     a:["承認可以，但說出差別：線上容易開始，卻缺少共同經歷和非語言訊息。"],
+     v:[["face-to-face","adj.","面對面的","Nothing quite replaces face-to-face contact."],["body language","n.","肢體語言","You miss out on body language when you only chat online."],["superficial","adj.","表面的","Some online friendships stay fairly superficial."]],
+     s:"They can be, although I think something is inevitably missing…"},
+    {t:"Why do some friendships end as people get older?",
+     a:["原因是人生階段不同（工作、搬家、成家），通常不是誰的錯。可以加一句個人觀察。"],
+     v:[["drift apart","phr. v.","漸行漸遠","People naturally drift apart when their lives go in different directions."],["priorities shift","phr.","優先順序改變","Once people start a family, their priorities shift."],["make the effort","phr.","花心思去做","A friendship only lasts if both sides make the effort."]],
+     s:"In most cases there's no big falling-out; it's more that…"}]},
+
+{id:"c04",cat:"person",t:"Describe a person who is very good at their job.",
+ p:["who this person is","what job they do","how you know about their work","and explain why you think they are good at it."],
+ a:["用一個你親眼看到的場景證明他厲害，例如處理突發狀況、對待客人的方式。","分析「好」從哪來：天分、訓練，還是態度？哪個最關鍵。"],
+ d:"把 He is professional 換成具體行為加上你的解讀：The way he handled that complaint showed me that real expertise is about staying calm under pressure.",
+ v:[["go the extra mile","idiom","多付出一分心力","She always goes the extra mile for her patients."],
+    ["attention to detail","n.","注重細節","His attention to detail is what sets him apart."],
+    ["take pride in","phr.","用心對待、以…為榮","He clearly takes pride in his work."],
+    ["know the job inside out","idiom","對工作瞭若指掌","After twenty years, she knows the job inside out."],
+    ["stay calm under pressure","phr.","在壓力下保持冷靜","He manages to stay calm under pressure, even on the busiest days."],
+    ["second nature","n.","習慣成自然","Dealing with difficult customers has become second nature to her."]],
+ s:["The person I have in mind is a…, and I've seen first-hand how…","What really sets her apart from others is…"],
+ q:[{t:"What qualities do people need to be successful at work?",
+     a:["分硬實力與軟實力，說哪個在現在更重要、為什麼。"],
+     v:[["work ethic","n.","敬業精神","A strong work ethic matters more than raw talent."],["interpersonal skills","n.","人際溝通能力","Interpersonal skills are essential in almost every job."],["adaptable","adj.","適應力強的","You have to be adaptable because industries change so fast."]],
+     s:"I'd say it's a combination of things, but if I had to pick one…"},
+    {t:"Is it more important to enjoy your job or to earn a high salary?",
+     a:["避免一面倒：短期和長期、不同人生階段的需求不同。"],
+     v:[["job satisfaction","n.","工作滿足感","Job satisfaction keeps people motivated in the long run."],["make ends meet","idiom","收支平衡、餬口","Of course, you still need enough to make ends meet."],["burn out","phr. v.","身心俱疲","People who hate their jobs tend to burn out quickly."]],
+     s:"Ideally both, but realistically…"},
+    {t:"How has technology changed the way people work?",
+     a:["正反都講：效率提升，但下班後仍被訊息綁住。"],
+     v:[["work remotely","phr.","遠距工作","Many people can now work remotely at least part of the week."],["streamline","v.","使流程更有效率","Software has streamlined a lot of repetitive tasks."],["blur the line","phr.","模糊界線","It has blurred the line between work and private life."]],
+     s:"It has transformed it in several ways. The most obvious one is…"},
+    {t:"Do you think some jobs deserve higher pay than others?",
+     a:["區分「應該」與「現實」：理想上依貢獻，現實上依市場供需。"],
+     v:[["undervalued","adj.","被低估的","Nurses and teachers are seriously undervalued."],["contribute to society","phr.","對社會有貢獻","Pay should reflect how much a job contributes to society."],["supply and demand","n.","供需","In reality, salaries are driven by supply and demand."]],
+     s:"In an ideal world, yes, though the reality is rather different…"}]},
+
+{id:"c05",cat:"person",t:"Describe a famous person you would like to meet.",
+ p:["who this person is","what they are famous for","what you would talk about","and explain why you would like to meet them."],
+ a:["不要只講成就；講你想問他的一個「非公開面」的問題，例如失敗、懷疑自己的時候。","連結到自己：他的故事和你目前的處境有什麼關係。"],
+ d:"用假設語氣展現文法：If I ever got the chance to sit down with him, I'd ask how he coped with…",
+ v:[["household name","n.","家喻戶曉的人物","He's a household name all over Asia."],
+    ["rise to fame","phr.","成名","She rose to fame in her early twenties."],
+    ["behind the scenes","phr.","幕後","I'd love to know what goes on behind the scenes."],
+    ["pick their brain","idiom","向某人請教","I'd really like to pick his brain about how he trains."],
+    ["overcome setbacks","phr.","克服挫折","He overcame setbacks that would have stopped most people."],
+    ["live up to the hype","idiom","名副其實","I'm curious whether he would live up to the hype in person."]],
+ s:["If I could meet anyone, it would probably be…","I've followed her career for years, mainly because…"],
+ q:[{t:"Why are people so interested in the lives of celebrities?",
+     a:["從心理層面講：好奇、嚮往，以及把名人當作社交話題。"],
+     v:[["escapism","n.","逃避現實的消遣","Celebrity gossip is a form of escapism for many people."],["glamorous lifestyle","n.","光鮮亮麗的生活","People are drawn to their glamorous lifestyle."],["relate to","phr. v.","產生共鳴","Fans want to see that stars are people they can relate to."]],
+     s:"I suppose part of it is simple curiosity, but there's also…"},
+    {t:"What are the disadvantages of being famous?",
+     a:["不只講隱私；延伸到心理健康、分不清誰是真朋友。"],
+     v:[["invasion of privacy","n.","侵犯隱私","The constant invasion of privacy must be exhausting."],["under constant scrutiny","phr.","持續被檢視","Everything they say is under constant scrutiny."],["take a toll on","phr.","對…造成傷害","Fame can take a toll on people's mental health."]],
+     s:"The obvious one is the lack of privacy, but beyond that…"},
+    {t:"Do celebrities have a responsibility to behave well in public?",
+     a:["有影響力就有責任，但他們也是普通人、沒簽約當榜樣。選一邊，同時承認另一邊。"],
+     v:[["public figure","n.","公眾人物","Like it or not, public figures shape how young people behave."],["hold accountable","phr.","追究責任","I think they should be held accountable for what they say."],["double standard","n.","雙重標準","There's often a double standard for famous people."]],
+     s:"I'd argue that they do, simply because…"},
+    {t:"How has social media changed what it means to be famous?",
+     a:["門檻降低，人人可紅，但壽命變短。比較傳統名人與網紅。"],
+     v:[["overnight sensation","n.","一夜爆紅的人","Anyone can become an overnight sensation these days."],["short-lived","adj.","短暫的","That kind of fame tends to be short-lived."],["build a following","phr.","累積粉絲","Ordinary people can build a following without any agent."]],
+     s:"It has completely lowered the barrier, in the sense that…"}]},
+
+{id:"c06",cat:"person",t:"Describe someone who often helps others.",
+ p:["who this person is","how you know them","what kind of help they give","and explain why you think they help others."],
+ a:["講一次具體的幫助，以及受助者的反應。","探討動機：天性、家庭教育，還是自己曾被幫助過？"],
+ d:"加入你的反思：Seeing her do that made me question how little I do for the people around me.",
+ v:[["selfless","adj.","無私的","She's one of the most selfless people I've ever met."],
+    ["lend a hand","idiom","伸出援手","He's always the first to lend a hand when a neighbor is in trouble."],
+    ["go out of their way","idiom","特地費心去做","She goes out of her way to make newcomers feel welcome."],
+    ["expect nothing in return","phr.","不求回報","He helps people and expects nothing in return."],
+    ["compassionate","adj.","有同理心的","She's a deeply compassionate person."],
+    ["give back to the community","phr.","回饋社區","Volunteering is his way of giving back to the community."]],
+ s:["The first person who comes to mind is my aunt, who seems to spend half her life helping people.","I think what drives him is…"],
+ q:[{t:"Why do some people enjoy helping others?",
+     a:["內在動機（成就感、同理心）與外在因素（宗教、家庭教育）都可以談。"],
+     v:[["sense of fulfillment","n.","滿足感","Helping others gives people a sense of fulfillment."],["empathy","n.","同理心","Some people simply have more empathy than others."],["rewarding","adj.","有回報感的、值得的","Volunteering can be incredibly rewarding."]],
+     s:"I think for most people it comes down to…"},
+    {t:"Should schools require students to do volunteer work?",
+     a:["指出矛盾：「強制的志願」還算志願嗎？但強制能讓原本不會接觸的人接觸到。"],
+     v:[["compulsory","adj.","強制的","I'm not sure it should be compulsory."],["defeat the purpose","idiom","失去原本的意義","Forcing students to volunteer might defeat the purpose."],["civic responsibility","n.","公民責任","It can teach teenagers civic responsibility."]],
+     s:"I'm in two minds about this, to be honest…"},
+    {t:"Do people help each other less now than in the past?",
+     a:["不要直接說「變冷漠」；指出幫助的形式變了，從鄰里互助變成線上捐款。"],
+     v:[["close-knit community","n.","關係緊密的社區","People used to live in close-knit communities."],["keep to themselves","idiom","不與人往來","In big cities, people tend to keep to themselves."],["crowdfunding","n.","群眾募資","On the other hand, crowdfunding lets strangers help each other."]],
+     s:"It might look that way, but I'd say the form of help has changed…"},
+    {t:"What can governments do to support people in need?",
+     a:["分短期救助與長期的根本措施（教育、就業）。"],
+     v:[["safety net","n.","社會安全網","A proper safety net prevents people from falling into poverty."],["affordable housing","n.","平價住宅","Affordable housing should be a priority."],["vulnerable","adj.","弱勢的","The most vulnerable groups are often the least visible."]],
+     s:"There are short-term and long-term measures. In the short term…"}]},
+
+{id:"c07",cat:"place",t:"Describe a place where you like to relax.",
+ p:["where it is","how often you go there","what you do there","and explain why it helps you relax."],
+ a:["用感官描述：聲音、光線、氣味，讓畫面具體。","對比你平常的生活節奏和在那裡的狀態。"],
+ d:"講你為什麼需要這個地方：It's the one place where I'm not expected to be productive，把地點連到現代生活的壓力。",
+ v:[["unwind","v.","放鬆","It's where I go to unwind after a long week."],
+    ["get away from it all","idiom","遠離一切煩囂","Sometimes I just need to get away from it all."],
+    ["hustle and bustle","n.","喧囂繁忙","It's a world away from the hustle and bustle of the city."],
+    ["tranquil","adj.","寧靜的","The atmosphere there is surprisingly tranquil."],
+    ["recharge my batteries","idiom","充電、恢復精力","An hour there is enough to recharge my batteries."],
+    ["clear my head","idiom","讓頭腦清醒","A short walk by the river helps me clear my head."]],
+ s:["There's a small park not far from where I live that I think of as my escape.","What makes it so calming is…"],
+ q:[{t:"Why do people today find it hard to relax?",
+     a:["原因：科技讓工作滲入生活、社群上的比較、休息時的罪惡感。"],
+     v:[["switch off","phr. v.","放空、不再想工作","Many people can't switch off even on weekends."],["always on call","phr.","隨時待命","Smartphones mean we're always on call."],["hectic schedule","n.","忙碌的行程","A hectic schedule leaves little room for rest."]],
+     s:"I think the main culprit is…"},
+    {t:"Are public parks important in cities?",
+     a:["功能分類：身心健康、社交、生態、降溫。挑兩個展開。"],
+     v:[["green space","n.","綠地","Green spaces make a city far more livable."],["concrete jungle","n.","水泥叢林","Without parks, a city is just a concrete jungle."],["breath of fresh air","idiom","透透氣／令人耳目一新","A park offers a breath of fresh air, quite literally."]],
+     s:"Absolutely. Apart from the obvious health benefits…"},
+    {t:"Do people relax differently now compared with the past?",
+     a:["從主動（運動、手作、串門子）到被動（滑手機、追劇）。順便問：真的有放鬆到嗎？"],
+     v:[["screen time","n.","使用螢幕的時間","A lot of our downtime is now screen time."],["binge-watch","v.","一口氣追完劇","People binge-watch entire series in one weekend."],["passive","adj.","被動的","Entertainment has become more passive than it used to be."]],
+     s:"Yes, quite dramatically. A generation ago…"},
+    {t:"Is it better to relax alone or with other people?",
+     a:["看個性與當下狀態；兩種休息補充的是不同的能量。"],
+     v:[["introvert","n.","內向的人","As an introvert, I recharge by being alone."],["quality time","n.","有品質的相處時光","Spending quality time with friends can be just as restful."],["peace and quiet","n.","安寧","After a busy day, all I want is some peace and quiet."]],
+     s:"It really depends on your personality…"}]},
+
+{id:"c08",cat:"place",t:"Describe a city you have visited and would like to go back to.",
+ p:["which city it is","when you went there","what you did there","and explain why you would like to return."],
+ a:["不要流水帳。挑一個場景（清晨的市場、迷路的巷子）深入描述。","比較它和你住的城市：步調、建築、人的態度。"],
+ d:"從景點走到城市的個性：What stayed with me wasn't the landmarks but the pace of life…",
+ v:[["vibrant","adj.","充滿活力的","It's a vibrant city with something going on every night."],
+    ["wander around","phr. v.","四處閒逛","I spent hours just wandering around the old town."],
+    ["rich in history","phr.","歷史悠久","The whole area is rich in history."],
+    ["off the beaten track","idiom","遠離觀光客的、冷門的","We found a little restaurant off the beaten track."],
+    ["soak up the atmosphere","phr.","感受氣氛","I sat in a square for an hour just soaking up the atmosphere."],
+    ["live up to my expectations","phr.","符合期待","The city more than lived up to my expectations."]],
+ s:["One city I keep thinking about is…, which I visited a couple of years ago.","What struck me as soon as I arrived was…"],
+ q:[{t:"Why do many people prefer living in big cities?",
+     a:["拉力（機會、便利、多元）加上但書（成本、壓力）。"],
+     v:[["job prospects","n.","就業前景","Cities offer far better job prospects."],["on your doorstep","idiom","近在咫尺","You have everything on your doorstep."],["cosmopolitan","adj.","國際化的","Young people are attracted to a cosmopolitan lifestyle."]],
+     s:"The main draw is undoubtedly…"},
+    {t:"What problems are caused by too many tourists?",
+     a:["從居民（房價、擁擠）、環境、文化（商業化）三個面向挑兩個講。"],
+     v:[["overcrowded","adj.","過度擁擠的","Popular spots get so overcrowded that locals avoid them."],["drive up prices","phr.","推高價格","Short-term rentals drive up prices for local residents."],["tourist trap","n.","專坑觀光客的地方","The old center has turned into one big tourist trap."]],
+     s:"There are quite a few, but the one that affects locals most is…"},
+    {t:"How can cities be made more pleasant to live in?",
+     a:["給具體提案與預期效果，用條件句：If more streets were…, people would…"],
+     v:[["public transport","n.","大眾運輸","Reliable public transport would take cars off the road."],["pedestrian-friendly","adj.","對行人友善的","City centers should be more pedestrian-friendly."],["urban planning","n.","都市規劃","Good urban planning makes a huge difference to daily life."]],
+     s:"If I were in charge, the first thing I'd do is…"},
+    {t:"Will cities be very different in the future?",
+     a:["用推測語氣（is likely to、may well），並點出推動力：氣候、人口、科技。"],
+     v:[["smart city","n.","智慧城市","We'll probably see more smart cities run on data."],["sustainable","adj.","永續的","Buildings will have to be far more sustainable."],["urban sprawl","n.","都市蔓延","Unless it's controlled, urban sprawl will swallow the countryside."]],
+     s:"It's hard to say for sure, but I imagine…"}]}
+);
+BANK.push(
+{id:"c09",cat:"place",t:"Describe a café or restaurant you enjoy going to.",
+ p:["where it is","how often you go there","what you usually order","and explain why you enjoy going there."],
+ a:["除了食物，講氣氛、店員，或你在那裡發生的一段記憶。","它在你生活中的角色：讀書的地方，或和朋友固定聚會的據點。"],
+ d:"It's not really about the coffee; it's the fact that the staff remember my order，把喜好連到歸屬感。",
+ v:[["cozy","adj.","溫馨舒適的","It's a cozy little place with only six tables."],
+    ["laid-back atmosphere","n.","輕鬆的氣氛","I love the laid-back atmosphere there."],
+    ["my go-to place","phr.","我的首選去處","It has become my go-to place for catching up with friends."],
+    ["reasonably priced","adj.","價格合理的","The food is delicious and reasonably priced."],
+    ["mouth-watering","adj.","令人垂涎的","They serve the most mouth-watering desserts."],
+    ["regular customer","n.","常客","I've been a regular customer there for about three years."]],
+ s:["There's a little café tucked away near my campus that I go to at least once a week.","What keeps me coming back is…"],
+ q:[{t:"Why do people like eating out?",
+     a:["便利、社交、嘗鮮；也可以提到住的地方小、沒廚房等社會因素。"],
+     v:[["save the hassle","phr.","省去麻煩","Eating out saves the hassle of cooking and washing up."],["treat myself","phr.","犒賞自己","Once in a while I like to treat myself to a nice dinner."],["socialize","v.","社交","For many people it's mainly a way to socialize."]],
+     s:"I think convenience is a big part of it, but…"},
+    {t:"Is home-cooked food healthier than restaurant food?",
+     a:["一般而言是，但取決於怎麼煮；可以提到控制油鹽與份量。"],
+     v:[["processed food","n.","加工食品","Cheap restaurants often rely on processed food."],["portion size","n.","份量","You can control the portion size at home."],["know what goes into","phr.","清楚裡面放了什麼","When you cook, you know what goes into your food."]],
+     s:"Generally speaking, yes, because…"},
+    {t:"How have eating habits changed in your country?",
+     a:["兩個相反的趨勢並存：更方便更快速，但也更重視健康和成分。"],
+     v:[["food delivery","n.","外送","Food delivery apps have changed everything."],["on the go","idiom","邊走邊做、趕時間","More people now eat on the go."],["health-conscious","adj.","注重健康的","At the same time, young people are more health-conscious."]],
+     s:"They've changed enormously, even within my lifetime…"},
+    {t:"Why are some people willing to pay a lot for a meal?",
+     a:["他們買的是體驗、紀念意義和社交展示，而不只是食物本身。"],
+     v:[["fine dining","n.","高級餐飲","Fine dining is as much about the experience as the food."],["special occasion","n.","特殊場合","Most people only do it for a special occasion."],["status symbol","n.","身分象徵","For some, an expensive restaurant is a status symbol."]],
+     s:"I suppose they're paying for more than just the food…"}]},
+
+{id:"c10",cat:"place",t:"Describe a place in nature you have visited.",
+ p:["where it is","when you went there","what you saw and did","and explain how you felt there."],
+ a:["描述尺度感和自己的渺小，或是安靜到聽得見什麼。","和城市生活對比，或談這個地方是否正受到威脅。"],
+ d:"Standing there, I felt incredibly small, which was oddly comforting，把景色連到心理感受。",
+ v:[["breathtaking scenery","n.","令人屏息的景色","We were surrounded by breathtaking scenery."],
+    ["untouched","adj.","未受破壞的","The valley is still largely untouched by tourism."],
+    ["in the middle of nowhere","idiom","在荒郊野外","The cabin was literally in the middle of nowhere."],
+    ["get back to nature","phr.","回歸自然","It was a chance to get back to nature for a few days."],
+    ["crystal-clear","adj.","清澈見底的","The water was crystal-clear."],
+    ["take my breath away","idiom","美得令人屏息","The view from the top took my breath away."]],
+ s:["A place that left a deep impression on me is…","As soon as we reached the top, …"],
+ q:[{t:"Why is it important to protect natural areas?",
+     a:["生態功能、對人的價值（心理健康、觀光），以及對下一代的責任。"],
+     v:[["biodiversity","n.","生物多樣性","These forests are vital for biodiversity."],["ecosystem","n.","生態系","Once an ecosystem is damaged, it takes decades to recover."],["future generations","n.","後代子孫","We owe it to future generations to preserve them."]],
+     s:"For one thing, … and beyond that…"},
+    {t:"Do you think people spend enough time outdoors?",
+     a:["不夠。講原因（工作型態、都市設計、3C）和後果（健康、與自然疏離）。"],
+     v:[["sedentary lifestyle","n.","久坐的生活型態","Most office workers lead a sedentary lifestyle."],["glued to their screens","idiom","黏在螢幕前","Children are glued to their screens for hours."],["fresh air","n.","新鮮空氣","Getting some fresh air does wonders for your mood."]],
+     s:"Not nearly enough, in my opinion…"},
+    {t:"How does tourism affect natural environments?",
+     a:["雙面刃：帶來破壞，但門票收入也能支持保育。關鍵在管理。"],
+     v:[["leave litter","phr.","亂丟垃圾","Careless visitors leave litter along the trails."],["conservation","n.","保育","Entrance fees can help fund conservation."],["fragile","adj.","脆弱的","Mountain environments are extremely fragile."]],
+     s:"It's a bit of a double-edged sword…"},
+    {t:"Should governments limit the number of visitors to natural sites?",
+     a:["支持有條件的限制（預約制、淡旺季），並回應「公共資源人人有權」的反對意見。"],
+     v:[["restrict access","phr.","限制進入","Some parks restrict access during the breeding season."],["strike a balance","idiom","取得平衡","We need to strike a balance between access and protection."],["wear and tear","n.","損耗","Thousands of hikers cause serious wear and tear on the paths."]],
+     s:"In certain cases, yes. I'd support it as long as…"}]},
+
+{id:"c11",cat:"place",t:"Describe your ideal home.",
+ p:["where it would be","what it would look like","who you would live with","and explain why it would be ideal for you."],
+ a:["從生活方式倒推空間：你想怎麼過一天，所以需要什麼。","現實和理想的對比：你現在住的地方缺了什麼。"],
+ d:"多用假設語氣與條件句：It would have…, and if money were no object, I'd…",
+ v:[["spacious","adj.","寬敞的","I'd want a spacious living room with high ceilings."],
+    ["natural light","n.","自然採光","Plenty of natural light is a must for me."],
+    ["within walking distance","phr.","步行可達","Ideally it would be within walking distance of a park."],
+    ["open-plan","adj.","開放式格局的","I love the idea of an open-plan kitchen."],
+    ["feel at home","idiom","感到自在","It should be somewhere guests instantly feel at home."],
+    ["a place of my own","phr.","屬於自己的地方","I've always dreamed of having a place of my own."]],
+ s:["If money were no object, my dream home would be…","The most important thing for me wouldn't be the size but…"],
+ q:[{t:"Why do many young people find it hard to buy a home?",
+     a:["薪資漲幅追不上房價、投資客；可以提後果，例如晚婚、和父母同住。"],
+     v:[["sky-high","adj.","高得離譜的","Property prices in the capital are sky-high."],["get on the property ladder","idiom","買到第一間房","It's almost impossible for graduates to get on the property ladder."],["down payment","n.","頭期款","Saving for a down payment can take over a decade."]],
+     s:"The simple answer is that wages haven't kept pace with…"},
+    {t:"Is it better to rent or to buy a home?",
+     a:["看人生階段與城市。租等於彈性，買等於安全感與資產。"],
+     v:[["flexibility","n.","彈性","Renting gives you the flexibility to move for work."],["long-term investment","n.","長期投資","Buying is seen as a safe long-term investment."],["tied down","adj.","被綁住的","A mortgage can leave you feeling tied down."]],
+     s:"It depends on where you are in life…"},
+    {t:"How have homes in your country changed over the years?",
+     a:["從透天、三代同堂到公寓、小家庭；空間變小但設備變好。"],
+     v:[["high-rise","adj.","高樓的","Most people now live in high-rise apartments."],["household","n.","家戶","The average household is much smaller than before."],["modern conveniences","n.","現代化設備","Homes are now full of modern conveniences."]],
+     s:"If you compare today's homes with the ones my grandparents grew up in…"},
+    {t:"What makes a neighborhood a good place to live?",
+     a:["硬體（交通、機能、綠地）加上軟體（安全、鄰里關係）。"],
+     v:[["sense of community","n.","社區歸屬感","A sense of community matters more than fancy facilities."],["amenities","n.","生活機能設施","You want amenities like shops and clinics nearby."],["well-connected","adj.","交通便利的","It should be well-connected by public transport."]],
+     s:"For me, it comes down to two things…"}]},
+
+{id:"c12",cat:"place",t:"Describe a crowded place you have been to.",
+ p:["where it was","when you went there","why it was so crowded","and explain how you felt about being there."],
+ a:["把擁擠的感受寫出層次：一開始興奮，後來疲憊；或是相反。","談「為什麼人們明知道擠還是要去」。"],
+ d:"加入觀察：What surprised me was how patient everyone was, which says a lot about…",
+ v:[["packed","adj.","擠滿人的","The whole street was packed with people."],
+    ["shoulder to shoulder","idiom","摩肩接踵","We were standing shoulder to shoulder for an hour."],
+    ["overwhelming","adj.","令人招架不住的","The noise was a bit overwhelming at first."],
+    ["squeeze through","phr. v.","擠過去","We had to squeeze through the crowd to reach the exit."],
+    ["buzzing","adj.","熱鬧、充滿活力的","The night market was buzzing with energy."],
+    ["claustrophobic","adj.","感到壓迫、幽閉的","I started to feel a little claustrophobic."]],
+ s:["The most crowded place I've ever been to has to be…","At first I found it exciting, but after a while…"],
+ q:[{t:"Why do some people enjoy being in crowded places?",
+     a:["氣氛、歸屬感、刺激感；可以對比喜歡安靜的人。"],
+     v:[["lively","adj.","熱鬧的","Some people thrive in a lively environment."],["feel part of something","phr.","感覺自己是其中一份子","In a crowd you feel part of something bigger."],["people-watching","n.","觀察路人","I actually enjoy a bit of people-watching."]],
+     s:"I think it's the energy more than anything…"},
+    {t:"What problems can overcrowding cause in cities?",
+     a:["交通、住房、公共服務、心理壓力，挑兩個說清楚因果。"],
+     v:[["traffic congestion","n.","交通壅塞","Traffic congestion wastes hours of people's time."],["put a strain on","phr.","對…造成壓力","A growing population puts a strain on public services."],["rush hour","n.","尖峰時段","The trains are unbearable during rush hour."]],
+     s:"Quite a few, but the most visible one is…"},
+    {t:"How can crowds at public events be managed safely?",
+     a:["事前（售票、動線設計）、現場（人員、分流）、科技（即時監控）。"],
+     v:[["crowd control","n.","人流管制","Proper crowd control is essential at large events."],["emergency exit","n.","緊急出口","Every emergency exit must be clearly marked."],["stagger","v.","錯開時間","Organizers can stagger entry times to avoid a rush."]],
+     s:"Careful planning is key. For instance…"},
+    {t:"Do you think cities will become more crowded in the future?",
+     a:["兩股力量在拉扯：都市化，以及遠距工作和少子化。用推測語氣。"],
+     v:[["urbanization","n.","都市化","Urbanization shows no sign of slowing down."],["remote work","n.","遠距工作","Remote work might encourage people to move out."],["decentralize","v.","分散、去中心化","Governments could decentralize jobs to smaller towns."]],
+     s:"It could go either way, to be honest…"}]},
+
+{id:"c13",cat:"object",t:"Describe a piece of technology you find useful.",
+ p:["what it is","when you got it","how you use it","and explain why it is useful to you."],
+ a:["講沒有它之前的麻煩，以及它具體省下了什麼。","誠實講副作用：依賴、分心。這會讓回答更成熟。"],
+ d:"It has changed not just how I work but how I think about time，從功能談到對生活方式的影響。",
+ v:[["indispensable","adj.","不可或缺的","It has become an indispensable part of my routine."],
+    ["user-friendly","adj.","容易使用的","The interface is really user-friendly."],
+    ["state-of-the-art","adj.","最先進的","At the time it was a state-of-the-art device."],
+    ["rely heavily on","phr.","高度依賴","I rely heavily on it for my studies."],
+    ["time-saving","adj.","省時的","The most time-saving feature is the automatic backup."],
+    ["can't do without","phr.","少不了","Honestly, it's something I can't do without."],
+    ["keep track of","phr.","持續掌握、記錄","I use it to keep track of my deadlines."]],
+ s:["The gadget I'd like to talk about is…, which I bought about two years ago.","Before I had it, I used to…"],
+ q:[{t:"Are people too dependent on technology?",
+     a:["承認依賴，但區分「依賴」和「善用」；舉一個失去的能力和一個得到的能力。"],
+     v:[["take it for granted","phr.","視為理所當然","We simply take it for granted that the internet will always work."],["lose the ability to","phr.","失去…的能力","Some people have lost the ability to read a map."],["double-edged sword","idiom","雙面刃","Technology is a double-edged sword."]],
+     s:"To a large extent, yes. Take navigation as an example…"},
+    {t:"How has technology changed education?",
+     a:["可及性與個人化，對比專注力下降、師生互動減少。"],
+     v:[["online learning","n.","線上學習","Online learning has made courses accessible to everyone."],["at their own pace","phr.","依自己的步調","Students can study at their own pace."],["short attention span","n.","注意力短暫","The downside is that many students now have a short attention span."]],
+     s:"The biggest change is probably access…"},
+    {t:"Do older and younger people use technology differently?",
+     a:["用途不同（年輕人偏社交娛樂，長輩偏聯絡和新聞），態度也不同（理所當然對比謹慎）。"],
+     v:[["digital native","n.","數位原住民","People my age are digital natives."],["generation gap","n.","代溝","There's a clear generation gap in how we use phones."],["pick up","phr. v.","輕鬆學會","Children pick up new apps almost instantly."]],
+     s:"Definitely. For younger people it's second nature, whereas…"},
+    {t:"What technology do you think will be important in the future?",
+     a:["選一項，說明為什麼是它，以及可能的風險。"],
+     v:[["artificial intelligence","n.","人工智慧","Artificial intelligence will reshape most industries."],["renewable energy","n.","再生能源","Renewable energy technology will be crucial."],["breakthrough","n.","突破","We might see a breakthrough in battery storage."]],
+     s:"If I had to bet on one, it would be…"}]},
+
+{id:"c14",cat:"object",t:"Describe a gift you gave to someone.",
+ p:["what the gift was","who you gave it to","how you chose it","and explain how the person reacted."],
+ a:["重點放在挑選的過程和你對對方的了解。","談禮物的意義：價格和心意哪個重要。"],
+ d:"That's when I realized a good gift is really a way of saying that you've been paying attention to someone.",
+ v:[["thoughtful","adj.","體貼、用心的","I wanted to give her something thoughtful rather than expensive."],
+    ["sentimental value","n.","情感價值","It doesn't cost much, but it has real sentimental value."],
+    ["handmade","adj.","手工製的","In the end I went for a handmade photo album."],
+    ["put a lot of thought into","phr.","花很多心思","I put a lot of thought into choosing it."],
+    ["over the moon","idiom","欣喜若狂","She was over the moon when she opened it."],
+    ["it's the thought that counts","saying","心意最重要","As people say, it's the thought that counts."]],
+ s:["The gift I'm most proud of giving was…","I spent ages trying to decide, because…"],
+ q:[{t:"Why do people give gifts?",
+     a:["情感表達，以及社會習俗（人情、禮數）兩個層面。"],
+     v:[["show appreciation","phr.","表達感謝","It's a simple way to show appreciation."],["strengthen bonds","phr.","加深情感連結","Gifts help to strengthen bonds between people."],["social obligation","n.","社交義務","Sometimes it's more of a social obligation."]],
+     s:"On one level it's about affection, but there's also a social side to it."},
+    {t:"Is an expensive gift always better?",
+     a:["否定並舉例；但承認某些場合（商務、婚禮）價格確實傳達重視。"],
+     v:[["price tag","n.","標價","The price tag says very little about a gift."],["personal touch","n.","個人巧思","A personal touch means far more."],["materialistic","adj.","物質主義的","Society has become rather materialistic."]],
+     s:"Not at all. In my experience…"},
+    {t:"How has gift-giving changed in recent years?",
+     a:["更方便、更實用（禮券、轉帳），但儀式感變弱。"],
+     v:[["gift card","n.","禮物卡","Many people just send a gift card now."],["impersonal","adj.","缺乏人情味的","Digital gifts can feel a bit impersonal."],["at the click of a button","idiom","按個鍵就能完成","You can send a present at the click of a button."]],
+     s:"It's become far more convenient, but…"},
+    {t:"Do you think children receive too many gifts nowadays?",
+     a:["後果（不懂珍惜）加上原因（父母的補償心理、消費主義）。"],
+     v:[["spoiled","adj.","被寵壞的","Children who get everything can easily become spoiled."],["appreciate the value of","phr.","懂得…的價值","They don't learn to appreciate the value of things."],["instant gratification","n.","即時滿足","They grow up expecting instant gratification."]],
+     s:"In many families, I think they do…"}]},
+
+{id:"c15",cat:"object",t:"Describe something you bought that you were pleased with.",
+ p:["what it was","when and where you bought it","why you bought it","and explain why you were pleased with it."],
+ a:["講購買前的猶豫與比較，顯示你的決策過程。","「值得」的定義：使用頻率、耐用度，還是它帶來的改變。"],
+ d:"Looking back, it wasn't the product itself but what it allowed me to do…",
+ v:[["value for money","n.","物超所值","It turned out to be excellent value for money."],
+    ["shop around","phr. v.","貨比三家","I shopped around for weeks before deciding."],
+    ["worth every penny","idiom","每一分錢都值得","It wasn't cheap, but it was worth every penny."],
+    ["splash out","phr. v.","花大錢犒賞自己","I decided to splash out on a decent pair of headphones."],
+    ["bargain","n.","划算的東西","I got it on sale, so it was a real bargain."],
+    ["durable","adj.","耐用的","It's lightweight but surprisingly durable."],
+    ["impulse buy","n.","衝動購物","It definitely wasn't an impulse buy."]],
+ s:["Something I bought recently that I'm really happy with is…","I'd been thinking about getting one for months, and…"],
+ q:[{t:"Why do people buy things they don't need?",
+     a:["心理因素（壓力、比較）加上外部因素（廣告、促銷、一鍵下單）。"],
+     v:[["retail therapy","n.","購物療癒","For some people, shopping is a kind of retail therapy."],["targeted advertising","n.","精準投放的廣告","Targeted advertising makes it hard to resist."],["keep up with trends","phr.","跟上潮流","People feel pressure to keep up with trends."]],
+     s:"I think advertising has a lot to answer for…"},
+    {t:"What are the advantages and disadvantages of online shopping?",
+     a:["便利、選擇多、好比價；但無法試用、包裝浪費、容易衝動消費。"],
+     v:[["home delivery","n.","送貨到府","Home delivery is incredibly convenient."],["try on","phr. v.","試穿","You can't try on clothes before buying."],["return policy","n.","退貨政策","A generous return policy solves part of the problem."]],
+     s:"The obvious advantage is convenience. That said…"},
+    {t:"Do you think people are becoming more materialistic?",
+     a:["是，但也有反向趨勢：極簡、二手、把錢花在體驗上。"],
+     v:[["consumer culture","n.","消費文化","We live in a consumer culture."],["possessions","n.","財物","People judge each other by their possessions."],["minimalism","n.","極簡主義","Interestingly, minimalism is also gaining popularity."]],
+     s:"In some ways yes, though I've also noticed…"},
+    {t:"How can people be encouraged to spend money more wisely?",
+     a:["教育（理財課）、工具（記帳 app）、制度（限制誘導式廣告）。"],
+     v:[["financial literacy","n.","理財素養","Schools should teach financial literacy."],["budget","n./v.","預算；編預算","Learning to budget is a basic life skill."],["live within your means","idiom","量入為出","Young people need to learn to live within their means."]],
+     s:"Education is the obvious starting point…"}]},
+
+{id:"c16",cat:"object",t:"Describe an object you have kept for a long time.",
+ p:["what it is","how you got it","how long you have had it","and explain why it is important to you."],
+ a:["物件只是載體，重點是它背後的人或時期。","如果失去它，你會失去什麼？"],
+ d:"It has no real monetary value, yet it's the first thing I'd save in a fire，用對比突顯意義。",
+ v:[["keepsake","n.","紀念品","It's a keepsake from my grandmother."],
+    ["hold on to","phr. v.","保留、不丟掉","I've held on to it for more than ten years."],
+    ["bring back memories","phr.","勾起回憶","Every time I see it, it brings back memories of that summer."],
+    ["irreplaceable","adj.","無可取代的","To me, it's completely irreplaceable."],
+    ["worn out","adj.","磨損的","It's a bit worn out now, but I'd never throw it away."],
+    ["treasure","v.","珍惜","It's something I'll treasure for the rest of my life."]],
+ s:["Something I've kept for a very long time is…","It may not look like much, but…"],
+ q:[{t:"Why do people keep old things?",
+     a:["把記憶實體化、身分認同、與逝去的人保持連結。"],
+     v:[["nostalgia","n.","懷舊之情","Nostalgia is a powerful feeling."],["emotional attachment","n.","情感依附","People form an emotional attachment to objects."],["reminder","n.","提醒、紀念","It serves as a reminder of who we used to be."]],
+     s:"I think objects act as a kind of anchor for memories…"},
+    {t:"Is it better to keep old things or throw them away?",
+     a:["兩者平衡：留有意義的、捨沒用的。你的標準是什麼？"],
+     v:[["clutter","n.","雜物","Too much clutter can be stressful."],["declutter","v.","清理雜物","I try to declutter once a year."],["let go of","phr.","放手、捨棄","It's healthy to let go of things you no longer use."]],
+     s:"I'd say it's about being selective…"},
+    {t:"What kinds of things do families pass down in your country?",
+     a:["有形的（首飾、房產）與無形的（食譜、手藝、家訓）。"],
+     v:[["heirloom","n.","傳家寶","Jewelry is the most common family heirloom."],["from generation to generation","phr.","世代相傳","Recipes are handed down from generation to generation."],["ancestral","adj.","祖傳的","Some families still keep an ancestral home."]],
+     s:"It varies, but typically…"},
+    {t:"Do museums play an important role in preserving history?",
+     a:["保存加上教育；也可以談數位化能不能取代實體博物館。"],
+     v:[["cultural heritage","n.","文化遺產","Museums protect our cultural heritage."],["artifact","n.","文物","Seeing a real artifact is different from reading about it."],["bring history to life","phr.","讓歷史活起來","A good exhibition brings history to life."]],
+     s:"Without a doubt. Apart from simply storing objects…"}]}
+);
+BANK.push(
+{id:"c17",cat:"object",t:"Describe a piece of clothing you like to wear.",
+ p:["what it is","where you got it","when you wear it","and explain why you like it."],
+ a:["衣服與身分：穿上它，你覺得自己是什麼樣的人。","舒適和外表、實用和流行，你怎麼取捨。"],
+ d:"It's less about fashion and more about feeling like myself，從外觀談到自我認同。",
+ v:[["go with everything","phr.","百搭","It's a plain jacket that goes with everything."],
+    ["suit me","phr.","適合我","The color really suits me."],
+    ["timeless","adj.","不退流行的","The design is simple and timeless."],
+    ["perfect fit","n.","非常合身","It was a perfect fit from day one."],
+    ["dress up","phr. v.","盛裝打扮","I don't like to dress up unless I have to."],
+    ["casual","adj.","休閒的","My style is fairly casual."],
+    ["wardrobe staple","n.","衣櫃必備單品","It has become a wardrobe staple for me."]],
+ s:["My favorite item of clothing is probably…","I tend to reach for it whenever…"],
+ q:[{t:"Why do some people care so much about fashion?",
+     a:["自我表達、社交訊號、歸屬感。"],
+     v:[["express themselves","phr.","表達自我","Clothes are a way for people to express themselves."],["first impression","n.","第一印象","What you wear shapes people's first impression of you."],["fit in","phr. v.","融入群體","Teenagers often follow trends just to fit in."]],
+     s:"For a lot of people, clothing is a form of…"},
+    {t:"Do clothes affect how people are judged?",
+     a:["現實上會（面試、職場），理想上不該；說明人為什麼會這樣判斷。"],
+     v:[["judge a book by its cover","idiom","以貌取人","We shouldn't judge a book by its cover, but we all do."],["dress code","n.","服裝規定","Many workplaces still have a strict dress code."],["make assumptions","phr.","妄下判斷","People make assumptions based on appearance."]],
+     s:"Unfortunately, yes. Whether we like it or not…"},
+    {t:"What is the impact of fast fashion?",
+     a:["環境（浪費、污染）、勞工、消費習慣；解方是買二手、買少買好。"],
+     v:[["fast fashion","n.","快時尚","Fast fashion encourages people to buy and throw away."],["sweatshop","n.","血汗工廠","Cheap clothes are often made in a sweatshop somewhere."],["second-hand","adj.","二手的","Buying second-hand is becoming trendy again."]],
+     s:"It's cheap for consumers, but the hidden cost is…"},
+    {t:"Should schools require students to wear uniforms?",
+     a:["平等與紀律，對比個性表達；可以提折衷方案。"],
+     v:[["sense of belonging","n.","歸屬感","Uniforms can create a sense of belonging."],["individuality","n.","個人特色","Critics say they suppress individuality."],["level the playing field","idiom","創造公平的環境","They level the playing field between rich and poor students."]],
+     s:"I can see both sides here…"}]},
+
+{id:"c18",cat:"object",t:"Describe something you want to buy but cannot afford yet.",
+ p:["what it is","how long you have wanted it","why you cannot buy it now","and explain why you want it."],
+ a:["「想要」背後是什麼需求：效率、夢想，還是身分？","你的計畫：怎麼存錢、願不願意等。"],
+ d:"用未來式與條件句：Once I've saved up enough, I'll…；If I had it now, I'd be able to…",
+ v:[["save up for","phr. v.","為…存錢","I've been saving up for it since last year."],
+    ["out of my price range","phr.","超出我的預算","At the moment it's well out of my price range."],
+    ["cost a fortune","idiom","貴得要命","The latest model costs a fortune."],
+    ["on a tight budget","phr.","預算很緊","As a student, I'm on a tight budget."],
+    ["set aside","phr. v.","撥出、存下","I set aside a little money every month."],
+    ["worth the wait","phr.","值得等待","I'm sure it'll be worth the wait."],
+    ["have my eye on","idiom","看上、相中","I've had my eye on it for ages."]],
+ s:["Something I've had my eye on for a long time is…","Realistically, I won't be able to afford it until…"],
+ q:[{t:"Is it important to save money?",
+     a:["安全感、自由（敢換工作）；但也別犧牲現在的生活品質。"],
+     v:[["rainy day","idiom","不時之需","Everyone should put something aside for a rainy day."],["financial security","n.","財務安全","Savings give you a sense of financial security."],["unexpected expenses","n.","意外開銷","There are always unexpected expenses."]],
+     s:"Absolutely, mainly because…"},
+    {t:"Why do some people borrow money to buy things?",
+     a:["區分必要的（房子、學費）和非必要的（消費）；金融產品讓借錢變得無感。"],
+     v:[["pay in installments","phr.","分期付款","It's so easy to pay in installments now."],["get into debt","phr.","負債","Young people get into debt without realizing it."],["live beyond their means","idiom","入不敷出","Credit cards tempt people to live beyond their means."]],
+     s:"There's a difference between borrowing for a home and borrowing for…"},
+    {t:"Should children be taught how to manage money?",
+     a:["應該。誰來教（父母或學校）、怎麼教（零用錢、記帳）。"],
+     v:[["pocket money","n.","零用錢","Giving children pocket money teaches responsibility."],["from an early age","phr.","從小","They should learn to save from an early age."],["money management","n.","金錢管理","Money management is rarely taught at school."]],
+     s:"Definitely, and the earlier the better…"},
+    {t:"Does having more money make people happier?",
+     a:["到某個程度為止；之後，關係、健康、意義更重要。"],
+     v:[["up to a point","phr.","在某個程度內","Money makes you happier, but only up to a point."],["peace of mind","n.","安心","What it really buys is peace of mind."],["material comfort","n.","物質享受","Beyond basic material comfort, it matters less."]],
+     s:"Only up to a point, I'd say…"}]},
+
+{id:"c19",cat:"event",t:"Describe a memorable trip you have taken.",
+ p:["where you went","who you went with","what you did there","and explain why it was memorable."],
+ a:["記得的往往是意外：迷路、下雨、遇到的陌生人。","這趟旅行改變了你對什麼的看法。"],
+ d:"That trip taught me that I'm more adaptable than I thought，從行程談到對自己的發現。",
+ v:[["once-in-a-lifetime","adj.","一生一次的","It felt like a once-in-a-lifetime experience."],
+    ["set off","phr. v.","出發","We set off before sunrise."],
+    ["on the spur of the moment","idiom","一時興起","We booked the tickets on the spur of the moment."],
+    ["go according to plan","phr.","照計畫進行","Nothing went according to plan, which made it more fun."],
+    ["immerse myself in","phr.","沉浸於","I tried to immerse myself in the local culture."],
+    ["unforgettable","adj.","難忘的","It was an unforgettable few days."],
+    ["broaden my horizons","idiom","拓展視野","Traveling alone really broadened my horizons."]],
+ s:["The trip that stands out most in my memory is…","Looking back, what made it special wasn't the destination but…"],
+ q:[{t:"Why do people like to travel?",
+     a:["逃離日常、好奇心，也有社交展示（打卡）的成分。"],
+     v:[["change of scenery","n.","換個環境","Sometimes you just need a change of scenery."],["experience different cultures","phr.","體驗不同文化","Traveling lets you experience different cultures first-hand."],["break from routine","n.","跳脫日常","A trip is a welcome break from routine."]],
+     s:"I think there are several motivations…"},
+    {t:"Is it better to travel alone or in a group?",
+     a:["自由對比安全與陪伴；不同目的地適合不同方式。"],
+     v:[["at my own pace","phr.","照自己的步調","Alone, I can explore at my own pace."],["split the cost","phr.","分攤費用","In a group you can split the cost."],["compromise","v./n.","妥協","Group travel always involves compromise."]],
+     s:"Both have their merits…"},
+    {t:"How has travel changed compared with the past?",
+     a:["更便宜、更方便、資訊透明；但也更同質化，大家都去一樣的打卡點。"],
+     v:[["budget airline","n.","廉價航空","Budget airlines have made flying affordable."],["at my fingertips","idiom","唾手可得","All the information I need is at my fingertips."],["spontaneous","adj.","隨興的","Oddly enough, trips have become less spontaneous."]],
+     s:"It's far more accessible than it used to be…"},
+    {t:"Does tourism benefit local people?",
+     a:["經濟利益，對比物價上漲、文化被商品化；誰才是真正受益的人。"],
+     v:[["boost the local economy","phr.","帶動當地經濟","Tourism can boost the local economy."],["create jobs","phr.","創造就業","It creates jobs in hotels and restaurants."],["seasonal","adj.","季節性的","But much of that work is seasonal and badly paid."]],
+     s:"In economic terms, yes, although…"}]},
+
+{id:"c20",cat:"event",t:"Describe a festival that is important in your culture.",
+ p:["what the festival is","when it takes place","what people do","and explain why it is important."],
+ a:["不要只介紹習俗；講你家的版本和你的感受。","傳統的意義正在改變嗎？"],
+ d:"For me, it's less about the rituals and more about the one time of year when everyone is under the same roof.",
+ v:[["family reunion","n.","家庭團聚","It's essentially one big family reunion."],
+    ["date back","phr. v.","追溯到","The tradition dates back hundreds of years."],
+    ["festive atmosphere","n.","節慶氣氛","There's a festive atmosphere everywhere you go."],
+    ["customs","n.","習俗","Each region has its own customs."],
+    ["look forward to","phr. v.","期待","It's the holiday I look forward to most."],
+    ["symbolize","v.","象徵","The round shape symbolizes togetherness."],
+    ["get together","phr. v.","聚在一起","The whole family gets together for dinner."]],
+ s:["The festival I'd like to describe is…, which falls in…","Ever since I was little, …"],
+ q:[{t:"Why are traditional festivals important?",
+     a:["認同、凝聚、傳承；在快速變動的社會裡更顯重要。"],
+     v:[["cultural identity","n.","文化認同","Festivals reinforce our cultural identity."],["sense of continuity","n.","延續感","They give people a sense of continuity."],["bring people together","phr.","把人們聚在一起","Above all, they bring people together."]],
+     s:"I'd say they serve as a link between…"},
+    {t:"Are festivals becoming too commercialized?",
+     a:["是，舉例；但商業化也讓節日得以延續和推廣。"],
+     v:[["commercialized","adj.","商業化的","Many holidays have become heavily commercialized."],["lose its meaning","phr.","失去意義","Some say the festival has lost its meaning."],["marketing gimmick","n.","行銷噱頭","A lot of it is just a marketing gimmick."]],
+     s:"To a large extent, I'm afraid so…"},
+    {t:"Do young people still value traditions?",
+     a:["不是不重視，而是用自己的方式重新詮釋。"],
+     v:[["old-fashioned","adj.","過時的","Some young people see these customs as old-fashioned."],["keep traditions alive","phr.","延續傳統","Others work hard to keep traditions alive."],["adapt","v.","調整、適應","Traditions survive because they adapt."]],
+     s:"It's a mixed picture, really…"},
+    {t:"How do festivals from other cultures spread around the world?",
+     a:["媒體、商業、移民；也可以談本土文化被稀釋的憂慮。"],
+     v:[["globalization","n.","全球化","Globalization has spread holidays like Halloween."],["pop culture","n.","流行文化","Pop culture plays a huge part."],["embrace","v.","接納、擁抱","Young people are quick to embrace foreign festivals."]],
+     s:"Mainly through the media, I think…"}]},
+
+{id:"c21",cat:"event",t:"Describe an occasion when you received good news.",
+ p:["what the news was","when you received it","how you got the news","and explain why it was good news for you."],
+ a:["把等待時的緊張鋪陳出來，好消息才有力量。","這個消息之後帶來了什麼改變。"],
+ d:"描述情緒的層次：relief first, then excitement, and later a bit of anxiety about what came next.",
+ v:[["thrilled","adj.","非常興奮的","I was absolutely thrilled when I read the email."],
+    ["couldn't believe my eyes","idiom","不敢相信自己的眼睛","I couldn't believe my eyes at first."],
+    ["a huge weight off my shoulders","idiom","如釋重負","It was a huge weight off my shoulders."],
+    ["sink in","phr. v.","（消息）被真正意識到","It took a few hours for the news to sink in."],
+    ["out of the blue","idiom","出乎意料地","The call came completely out of the blue."],
+    ["pay off","phr. v.","有了回報","All those months of hard work finally paid off."],
+    ["on cloud nine","idiom","樂不可支","I was on cloud nine for the rest of the week."]],
+ s:["One piece of news I'll never forget is when I found out that…","I remember exactly where I was when…"],
+ q:[{t:"How do people usually share good news nowadays?",
+     a:["管道依親疏而不同：重要的人當面或打電話，其他人在社群發文。"],
+     v:[["post an update","phr.","發文更新","Most people post an update on social media."],["in person","phr.","當面","I still prefer to tell close friends in person."],["spread the word","idiom","把消息傳開","Group chats spread the word in seconds."]],
+     s:"These days, the first instinct is to…"},
+    {t:"Why do people like sharing news on social media?",
+     a:["連結、被肯定的需求、塑造形象。"],
+     v:[["seek validation","phr.","尋求認同","Some people are simply seeking validation."],["stay connected","phr.","保持聯繫","It helps them stay connected with distant friends."],["show off","phr. v.","炫耀","Others just want to show off a little."]],
+     s:"I think there's a mix of motives…"},
+    {t:"Is the news we get from the media mostly negative?",
+     a:["是。原因（點閱率、人對威脅特別敏感）和影響（焦慮、世界觀偏差）。"],
+     v:[["sensational","adj.","聳動的","Sensational headlines attract more clicks."],["bad news sells","saying","壞消息才有賣點","Sadly, bad news sells."],["distorted view","n.","扭曲的看法","It gives us a distorted view of the world."]],
+     s:"It certainly feels that way, and I think the reason is…"},
+    {t:"How can people tell if news is reliable?",
+     a:["查來源、交叉比對、對情緒化標題保持警覺；媒體素養教育。"],
+     v:[["fact-check","v.","查核事實","We should fact-check before sharing anything."],["credible source","n.","可信來源","Always look for a credible source."],["misinformation","n.","錯誤資訊","Misinformation spreads faster than the truth."]],
+     s:"It's getting harder, but a few habits help…"}]},
+
+{id:"c22",cat:"event",t:"Describe a time when you were late for something important.",
+ p:["what you were late for","why you were late","what happened as a result","and explain how you felt about it."],
+ a:["把過程中的焦急寫出來，再講後果與你學到的事。","遲到之後，你改了什麼習慣。"],
+ d:"Ever since then, I've made a point of…，用完成式講教訓對現在的影響。",
+ v:[["oversleep","v.","睡過頭","I overslept because my alarm didn't go off."],
+    ["stuck in traffic","phr.","塞在車陣中","I was stuck in traffic for forty minutes."],
+    ["in a rush","phr.","匆匆忙忙","I left the house in a rush."],
+    ["make it on time","phr.","準時趕到","I knew I wouldn't make it on time."],
+    ["apologize profusely","phr.","再三道歉","I apologized profusely to the interviewer."],
+    ["leave things to the last minute","idiom","拖到最後一刻","I tend to leave things to the last minute."],
+    ["learn my lesson","idiom","學到教訓","I've definitely learned my lesson."]],
+ s:["I'm usually quite punctual, but there was one occasion when…","To make matters worse, …"],
+ q:[{t:"Is being punctual important in your culture?",
+     a:["分場合：工作和正式場合嚴格，朋友聚會比較寬鬆。"],
+     v:[["punctuality","n.","守時","Punctuality is taken seriously at work."],["sign of respect","n.","尊重的表現","Being on time is a sign of respect."],["frowned upon","adj.","不被認可的","Turning up late is generally frowned upon."]],
+     s:"It depends on the situation…"},
+    {t:"Why are some people always late?",
+     a:["估錯時間、拖延、不夠重視；有些人是太樂觀。"],
+     v:[["poor time management","n.","時間管理不佳","Usually it comes down to poor time management."],["underestimate","v.","低估","They underestimate how long things take."],["procrastinate","v.","拖延","Some people simply procrastinate."]],
+     s:"I think in most cases it's not rudeness but…"},
+    {t:"How does technology help people manage their time?",
+     a:["工具有效，但同一支手機也是最大的干擾來源。"],
+     v:[["set a reminder","phr.","設提醒","I set a reminder for everything."],["stay on top of","idiom","掌握、不落後","Calendar apps help me stay on top of deadlines."],["distraction","n.","令人分心的事物","Ironically, the phone is also the biggest distraction."]],
+     s:"In theory it helps a lot…"},
+    {t:"Do you think modern life is too fast-paced?",
+     a:["是。原因（競爭、科技），以及個人可以怎麼調整。"],
+     v:[["fast-paced","adj.","步調快的","City life is incredibly fast-paced."],["work-life balance","n.","工作與生活的平衡","People struggle to find a work-life balance."],["slow down","phr. v.","放慢腳步","We rarely give ourselves permission to slow down."]],
+     s:"For many people, yes…"}]},
+
+{id:"c23",cat:"event",t:"Describe a special meal you had.",
+ p:["when and where it was","who you were with","what you ate","and explain why it was special."],
+ a:["食物是配角，主角是人與場合。","味道連結到的記憶或家鄉。"],
+ d:"That meal reminded me that food is really about who you share it with.",
+ v:[["home-cooked","adj.","家常的","Nothing beats a home-cooked meal."],
+    ["signature dish","n.","招牌菜","My grandmother made her signature dish."],
+    ["from scratch","idiom","從頭開始做","Everything was made from scratch."],
+    ["savor","v.","細細品味","We took our time and savored every bite."],
+    ["hearty","adj.","豐盛的","It was a simple but hearty dinner."],
+    ["around the table","phr.","圍坐餐桌","We sat around the table talking for hours."],
+    ["rich in flavor","phr.","味道濃郁","The broth was incredibly rich in flavor."]],
+ s:["A meal I still remember vividly was…","What made it special wasn't really the food itself…"],
+ q:[{t:"Why is sharing meals important for families?",
+     a:["每天固定的交流時間；現代家庭越來越難做到的原因。"],
+     v:[["bond","v./n.","增進感情；情感連結","Mealtimes are when families bond."],["sit down together","phr.","坐下來一起吃飯","Few families sit down together every evening."],["family ties","n.","家庭關係","Regular meals strengthen family ties."]],
+     s:"I think it's one of the few moments in the day when…"},
+    {t:"Are traditional foods disappearing?",
+     a:["部分是（費工、年輕人不學），但也有復興的跡象。"],
+     v:[["time-consuming","adj.","耗時的","Many traditional dishes are time-consuming to prepare."],["die out","phr. v.","逐漸消失","Some recipes are slowly dying out."],["authentic","adj.","道地的","It's getting harder to find authentic versions."]],
+     s:"Some of them are, sadly…"},
+    {t:"Should children learn to cook?",
+     a:["獨立、健康、省錢；由學校教還是在家裡學。"],
+     v:[["life skill","n.","生活技能","Cooking is an essential life skill."],["self-sufficient","adj.","能獨立生活的","It makes young people more self-sufficient."],["balanced diet","n.","均衡飲食","They also learn what a balanced diet looks like."]],
+     s:"I think so, for a number of reasons…"},
+    {t:"How does food reflect a country's culture?",
+     a:["地理氣候、歷史上的移民、價值觀（共食或分食）。"],
+     v:[["staple food","n.","主食","Rice is the staple food here, which says a lot about our history."],["cuisine","n.","料理、菜系","Our cuisine reflects waves of migration."],["melting pot","n.","文化熔爐","The food scene is a real melting pot."]],
+     s:"Food tells you a surprising amount about…"}]},
+
+{id:"c24",cat:"event",t:"Describe a live event you attended and enjoyed.",
+ p:["what the event was","where and when it took place","who you went with","and explain why you enjoyed it."],
+ a:["講現場感：聲音、人群的反應、起雞皮疙瘩的那一刻。","現場和在家看螢幕，差別在哪裡。"],
+ d:"There's something about sharing a moment with thousands of strangers that a screen can't replicate.",
+ v:[["live performance","n.","現場表演","Nothing compares to a live performance."],
+    ["electric atmosphere","n.","熱烈沸騰的氣氛","There was an electric atmosphere in the stadium."],
+    ["sold out","adj.","售罄","The tickets sold out within minutes."],
+    ["give me goosebumps","idiom","讓我起雞皮疙瘩","The opening song gave me goosebumps."],
+    ["highlight","n.","最精彩的部分","The highlight was definitely the encore."],
+    ["well worth it","phr.","非常值得","It was expensive but well worth it."],
+    ["sing along","phr. v.","跟著唱","Everyone was singing along to every word."]],
+ s:["An event I thoroughly enjoyed was…","The moment the lights went down, …"],
+ q:[{t:"Why do people enjoy going to live events?",
+     a:["共同體驗、親眼見到、現場的能量。"],
+     v:[["shared experience","n.","共同的體驗","It's a shared experience with thousands of fans."],["in the flesh","idiom","親眼見到本人","People want to see their idols in the flesh."],["adrenaline rush","n.","腎上腺素飆升的快感","You get an adrenaline rush you can't get at home."]],
+     s:"I think it's the sense of being part of something…"},
+    {t:"Are large events good for a city?",
+     a:["經濟與知名度，對比噪音、交通、活動結束後閒置的場館。"],
+     v:[["put the city on the map","idiom","讓城市出名","A big event can put a city on the map."],["revenue","n.","收入","It generates revenue for hotels and shops."],["disruption","n.","干擾、混亂","Residents have to put up with noise and disruption."]],
+     s:"On balance, I'd say yes, but…"},
+    {t:"Will online events replace live ones?",
+     a:["不會取代，而是互補；線上擴大觸及，現場提供體驗。"],
+     v:[["virtual","adj.","線上的、虛擬的","Virtual concerts became common during the pandemic."],["no substitute for","phr.","無可取代","There's no substitute for being there."],["complement","v.","相輔相成","Online events will complement rather than replace live ones."]],
+     s:"I doubt it. What's more likely is…"},
+    {t:"Should governments fund arts and cultural events?",
+     a:["文化的公共價值，對比預算的優先順序；可以提條件，例如補助小型在地活動。"],
+     v:[["subsidize","v.","補助","Governments should subsidize local theaters."],["taxpayers' money","n.","納稅人的錢","Some see it as a waste of taxpayers' money."],["enrich","v.","豐富","The arts enrich people's lives."]],
+     s:"I believe so, within reason…"}]}
+);
+BANK.push(
+{id:"c25",cat:"experience",t:"Describe a time when you helped someone.",
+ p:["who you helped","what the problem was","how you helped","and explain how you felt afterwards."],
+ a:["誠實講你當下的猶豫或付出的代價，才不會像在自誇。","被幫的人後來怎麼樣；你們的關係有變嗎。"],
+ d:"It made me realize that helping is often less about solving the problem and more about just showing up.",
+ v:[["do someone a favor","idiom","幫某人一個忙","I was happy to do him a favor."],
+    ["without hesitation","phr.","毫不猶豫","I agreed without hesitation."],
+    ["in need of","phr.","需要","She was clearly in need of support."],
+    ["talk them through","phr.","一步步引導","I talked her through the whole process."],
+    ["make a difference","phr.","帶來改變","Even a small gesture can make a difference."],
+    ["grateful","adj.","感激的","He was extremely grateful afterwards."],
+    ["sense of satisfaction","n.","滿足感","It gave me a real sense of satisfaction."]],
+ s:["I'd like to talk about the time I helped a classmate who…","I didn't think much of it at the time, but…"],
+ q:[{t:"Do people in cities help strangers less than people in villages?",
+     a:["不是冷漠，而是匿名性和「別人會幫」的心理；鄉村彼此認識。"],
+     v:[["bystander","n.","旁觀者","In a crowd, everyone becomes a bystander."],["anonymous","adj.","互不相識的","City life is far more anonymous."],["look out for","phr. v.","照應","In villages, neighbors look out for each other."]],
+     s:"I think there's some truth in that, and the reason is…"},
+    {t:"How can children be taught to help others?",
+     a:["身教重於言教；從家事和小任務開始。"],
+     v:[["mirror","v.","模仿","Children mirror what they see adults do."],["household chores","n.","家事","Doing household chores is a good start."],["considerate","adj.","體貼的","It teaches them to be considerate of others."]],
+     s:"Mostly by example, I'd say…"},
+    {t:"Is it better to help by giving money or by giving time?",
+     a:["錢有效率，時間有溫度；看對方需要什麼。"],
+     v:[["donate","v.","捐贈","It's easy to donate online."],["hands-on","adj.","親身參與的","Hands-on help often means more to people."],["make a lasting impact","phr.","造成長遠的影響","Regular volunteering can make a lasting impact."]],
+     s:"They serve different purposes…"},
+    {t:"Why do some people not want to accept help?",
+     a:["自尊、怕麻煩別人、文化上的面子觀念。"],
+     v:[["too proud","adj.","自尊心太強","Some people are simply too proud to ask."],["be a burden","phr.","成為負擔","They don't want to be a burden on anyone."],["lose face","idiom","丟臉","In my culture, people worry about losing face."]],
+     s:"I suppose pride has a lot to do with it…"}]},
+
+{id:"c26",cat:"experience",t:"Describe a difficult decision you made.",
+ p:["what the decision was","when you made it","what options you had","and explain why it was difficult."],
+ a:["講清楚兩個選項各自的代價，才顯得「難」。","事後回看：這是對的決定嗎？如果重來呢？"],
+ d:"用第三條件句反思：If I had chosen the other path, I probably wouldn't have…",
+ v:[["weigh up the pros and cons","idiom","權衡利弊","I spent weeks weighing up the pros and cons."],
+    ["at a crossroads","idiom","面臨抉擇","I felt I was at a crossroads in my life."],
+    ["torn between","phr.","左右為難","I was torn between staying and leaving."],
+    ["trust my gut","idiom","相信直覺","In the end I decided to trust my gut."],
+    ["sleep on it","idiom","睡一覺再決定","My dad told me to sleep on it."],
+    ["no regrets","phr.","不後悔","Looking back, I have no regrets."],
+    ["take the plunge","idiom","下定決心去做","Eventually I took the plunge and applied."]],
+ s:["One of the toughest decisions I've had to make was whether to…","What made it so hard was that…"],
+ q:[{t:"Should people ask for advice when making big decisions?",
+     a:["應該聽，但最後自己決定；別人看得客觀，卻不用承擔後果。"],
+     v:[["second opinion","n.","他人的意見","It never hurts to get a second opinion."],["objective","adj.","客觀的","Friends can be more objective than you are."],["at the end of the day","idiom","說到底","At the end of the day, it's your life."]],
+     s:"I think it's wise to, as long as…"},
+    {t:"Are young people today given too many choices?",
+     a:["選擇多是好事，但帶來焦慮與比較；選擇的弔詭。"],
+     v:[["spoiled for choice","idiom","選擇多到難以抉擇","We're spoiled for choice when it comes to careers."],["fear of missing out","n.","害怕錯過","There's a constant fear of missing out."],["overthink","v.","想太多","Too many options make people overthink."]],
+     s:"In a sense, yes. It sounds like a good problem to have, but…"},
+    {t:"Do people make better decisions alone or in groups?",
+     a:["團體觀點多但容易從眾；個人果斷但有盲點。看決策類型。"],
+     v:[["diverse perspectives","n.","多元觀點","Groups bring diverse perspectives."],["go along with","phr. v.","附和","People often just go along with the majority."],["decisive","adj.","果斷的","A single person can be more decisive."]],
+     s:"It depends on what kind of decision it is…"},
+    {t:"What decisions do parents usually make for their children?",
+     a:["隨年齡遞減；講哪些應該慢慢交還給孩子。"],
+     v:[["have a say","idiom","有發言權","Teenagers should have a say in what they study."],["overprotective","adj.","過度保護的","Some parents are overprotective."],["in their best interest","phr.","為了他們好","Parents usually believe it's in their best interest."]],
+     s:"When children are small, virtually everything, but…"}]},
+
+{id:"c27",cat:"experience",t:"Describe a time when you learned a new skill.",
+ p:["what the skill was","why you learned it","how you learned it","and explain how you felt about learning it."],
+ a:["講學習曲線：一開始很糟，卡關，然後突破的那一刻。","這個技能帶給你技能以外的東西，例如耐心、自信。"],
+ d:"The skill itself mattered less than discovering that I could be a beginner again.",
+ v:[["get the hang of","idiom","抓到訣竅","It took me a month to get the hang of it."],
+    ["start from square one","idiom","從零開始","I had to start from square one."],
+    ["trial and error","n.","反覆試驗","I learned mostly through trial and error."],
+    ["practice makes perfect","saying","熟能生巧","As they say, practice makes perfect."],
+    ["out of my comfort zone","idiom","離開舒適圈","It pushed me out of my comfort zone."],
+    ["master","v.","精通","I'm still far from mastering it."],
+    ["sense of achievement","n.","成就感","Finishing my first piece gave me a huge sense of achievement."]],
+ s:["A skill I picked up fairly recently is…","At first I was hopeless at it, but…"],
+ q:[{t:"Is it easier to learn new skills as a child or as an adult?",
+     a:["小孩吸收快、不怕錯；大人有方法、有紀律，但怕丟臉。"],
+     v:[["absorb","v.","吸收","Children absorb new information like sponges."],["self-disciplined","adj.","自律的","Adults tend to be more self-disciplined."],["fear of failure","n.","害怕失敗","Adults are held back by a fear of failure."]],
+     s:"Each has its advantages…"},
+    {t:"What skills are most important in today's job market?",
+     a:["可轉移的能力比特定知識更耐用；舉例說明。"],
+     v:[["critical thinking","n.","批判性思考","Employers value critical thinking."],["transferable skills","n.","可轉移的技能","Transferable skills matter more than specific knowledge."],["digital literacy","n.","數位素養","Basic digital literacy is now expected in every job."]],
+     s:"I'd put soft skills at the top of the list…"},
+    {t:"Can people learn practical skills effectively online?",
+     a:["入門可以，進階需要實作與回饋；看技能類型。"],
+     v:[["tutorial","n.","教學影片","There's a tutorial for almost anything."],["hands-on experience","n.","實作經驗","Some skills still require hands-on experience."],["instant feedback","n.","即時回饋","What's missing online is instant feedback from a teacher."]],
+     s:"Up to a point, yes…"},
+    {t:"Should schools focus more on practical skills than academic subjects?",
+     a:["不是二選一；指出目前的失衡，並提出怎麼整合。"],
+     v:[["well-rounded","adj.","全面發展的","Schools should produce well-rounded students."],["exam-oriented","adj.","考試導向的","Our system is too exam-oriented."],["real-world","adj.","真實世界的","Students rarely apply knowledge to real-world problems."]],
+     s:"I don't think it has to be one or the other…"}]},
+
+{id:"c28",cat:"experience",t:"Describe a challenge you overcame.",
+ p:["what the challenge was","when it happened","how you dealt with it","and explain what you learned from it."],
+ a:["說出最想放棄的那一刻，以及讓你撐下去的原因。","這個挑戰如何改變你看待困難的方式。"],
+ d:"I used to see obstacles as signs to stop; now I see them as part of the process.",
+ v:[["daunting","adj.","令人卻步的","At first the task seemed daunting."],
+    ["on the verge of giving up","phr.","瀕臨放棄","I was on the verge of giving up."],
+    ["persevere","v.","堅持不懈","I'm glad I persevered."],
+    ["break it down","phr.","把它拆解","I broke it down into smaller steps."],
+    ["rise to the challenge","idiom","迎接挑戰","I was determined to rise to the challenge."],
+    ["turning point","n.","轉捩點","That experience was a turning point for me."],
+    ["come out stronger","phr.","變得更堅強","I came out stronger in the end."]],
+ s:["The biggest challenge I've faced so far was…","There were moments when I seriously doubted myself, but…"],
+ q:[{t:"Do challenges make people stronger?",
+     a:["通常會，但有條件：需要支持和復原的時間，並非每個人都會成長。"],
+     v:[["build character","phr.","磨練品格","Hardship is said to build character."],["resilience","n.","韌性","Overcoming difficulties builds resilience."],["adversity","n.","逆境","Not everyone grows from adversity."]],
+     s:"In most cases, yes, provided that…"},
+    {t:"Why do some people give up easily?",
+     a:["動機、對失敗的解讀、有沒有人支持。"],
+     v:[["lack of motivation","n.","缺乏動力","Often it's a lack of motivation rather than ability."],["setback","n.","挫折","They see every setback as a failure."],["support network","n.","支持系統","Not everyone has a strong support network."]],
+     s:"I don't think it's laziness. More often…"},
+    {t:"Should parents let their children face difficulties on their own?",
+     a:["適度放手，依年齡與風險調整；太早介入的代價。"],
+     v:[["step in","phr. v.","介入","Parents shouldn't step in too quickly."],["learn the hard way","idiom","從教訓中學習","Sometimes kids need to learn the hard way."],["independence","n.","獨立","It's how they develop independence."]],
+     s:"Within limits, I think so…"},
+    {t:"What challenges do young people face today that previous generations did not?",
+     a:["經濟（房價、不穩定的工作）、心理（社群比較）、資訊過載。"],
+     v:[["cost of living","n.","生活成本","The cost of living has shot up."],["job insecurity","n.","工作不穩定","There's far more job insecurity."],["mental health","n.","心理健康","Mental health problems are much more common."]],
+     s:"Quite a few, and the most pressing one is probably…"}]},
+
+{id:"c29",cat:"experience",t:"Describe a time when you worked in a team.",
+ p:["what the project was","who was in the team","what your role was","and explain what you learned from the experience."],
+ a:["講一次衝突或分歧以及怎麼解決，比「大家都很合作」有說服力。","你在團隊裡通常扮演什麼角色，這次你對自己有什麼新發現。"],
+ d:"It taught me that listening is sometimes a bigger contribution than talking.",
+ v:[["team player","n.","有團隊精神的人","I'd like to think I'm a good team player."],
+    ["pull together","phr. v.","同心協力","We pulled together in the final week."],
+    ["pull my weight","idiom","盡自己的本分","Everyone pulled their weight, which was a relief."],
+    ["meet the deadline","phr.","趕上期限","We barely managed to meet the deadline."],
+    ["clash of opinions","n.","意見衝突","There was a clash of opinions about the design."],
+    ["delegate","v.","分派工作","Our leader knew how to delegate."],
+    ["on the same page","idiom","有共識","We held a meeting to make sure everyone was on the same page."]],
+ s:["Last year I worked on a group project in which…","Things didn't go smoothly at first, mainly because…"],
+ q:[{t:"What makes a good team leader?",
+     a:["不是發號施令，而是讓每個人發揮；舉你遇過的例子。"],
+     v:[["bring out the best in","idiom","激發出最好的一面","A good leader brings out the best in people."],["take responsibility","phr.","承擔責任","They take responsibility when things go wrong."],["approachable","adj.","平易近人的","The best leaders are approachable."]],
+     s:"For me, it's less about authority and more about…"},
+    {t:"Is teamwork or individual work more effective?",
+     a:["看任務：複雜、需要多種專業的適合團隊；需要深度專注的適合個人。"],
+     v:[["pool ideas","phr.","集思廣益","Teams can pool ideas and skills."],["free rider","n.","搭便車的人","There's always the risk of a free rider."],["work independently","phr.","獨立作業","Some tasks are better done by people who work independently."]],
+     s:"It depends entirely on the task…"},
+    {t:"Why do some people find it hard to work with others?",
+     a:["個性、溝通方式、對成果的標準不同。"],
+     v:[["strong-willed","adj.","固執、意志強的","Strong-willed people struggle to compromise."],["communication breakdown","n.","溝通失靈","Most conflicts start with a communication breakdown."],["see eye to eye","idiom","意見一致","Colleagues don't always see eye to eye."]],
+     s:"I think it often comes down to personality…"},
+    {t:"Should schools include more group work?",
+     a:["有助於職場準備，但評分的公平性是問題；提出改善方式。"],
+     v:[["collaborate","v.","合作","Students need to learn how to collaborate."],["fairly assessed","adj.","被公平評量","It's hard to make sure everyone is fairly assessed."],["prepare students for","phr.","讓學生準備好面對","Group work prepares students for the workplace."]],
+     s:"Yes, with one reservation…"}]},
+
+{id:"c30",cat:"experience",t:"Describe a time when you had to wait for something.",
+ p:["what you were waiting for","how long you waited","what you did while waiting","and explain how you felt about waiting."],
+ a:["等待中的心理變化：期待，不耐，然後接受。","等待值得嗎？這次經驗改變了你對耐心的看法嗎。"],
+ d:"We're so used to getting everything instantly that waiting has almost become a lost skill.",
+ v:[["drag on","phr. v.","拖很久","The process dragged on for months."],
+    ["lose my patience","phr.","失去耐心","I was starting to lose my patience."],
+    ["kill time","idiom","打發時間","I killed time by scrolling through my phone."],
+    ["on edge","idiom","緊張不安","I was on edge the whole time."],
+    ["anticipation","n.","期待","The anticipation was almost unbearable."],
+    ["feel like forever","phr.","感覺像永遠那麼久","Those two weeks felt like forever."]],
+ s:["I remember having to wait for…, which felt like an eternity.","To take my mind off it, I…"],
+ q:[{t:"Are people less patient now than in the past?",
+     a:["是，因為科技把等待的時間壓到幾乎為零，期待值也跟著改變。"],
+     v:[["on demand","phr.","隨選即得","We're used to having everything on demand."],["short-tempered","adj.","沒耐性、易怒的","People get short-tempered when a page takes five seconds to load."],["tolerance","n.","容忍度","Our tolerance for delay has dropped."]],
+     s:"Without a doubt, and technology is largely to blame…"},
+    {t:"Why is patience important?",
+     a:["長期目標、人際關係、避免衝動決定。"],
+     v:[["long-term goal","n.","長期目標","Any long-term goal requires patience."],["rash decision","n.","草率的決定","Impatience leads to rash decisions."],["delay gratification","phr.","延遲享樂","Successful people learn to delay gratification."]],
+     s:"Because almost everything worthwhile takes time…"},
+    {t:"In what situations do people have to wait in your country?",
+     a:["舉兩三個具體場景，並評論大家的態度。"],
+     v:[["line up","phr. v.","排隊","People line up for popular restaurants."],["waiting list","n.","候補名單","There's a long waiting list for some hospitals."],["peak hours","n.","尖峰時段","During peak hours, even the trains are delayed."]],
+     s:"The first thing that comes to mind is…"},
+    {t:"How can companies reduce waiting times for customers?",
+     a:["預約制、自助服務、人力配置；但自動化也會讓服務變冷。"],
+     v:[["book in advance","phr.","事先預約","Customers can book in advance through an app."],["self-service","adj.","自助式的","Self-service machines speed things up."],["understaffed","adj.","人手不足的","Many places are simply understaffed."]],
+     s:"Technology offers some obvious solutions…"}]},
+
+{id:"c31",cat:"experience",t:"Describe a mistake you made and learned from.",
+ p:["what the mistake was","when it happened","what the consequences were","and explain what you learned from it."],
+ a:["不要輕描淡寫；講出後果，再講你怎麼補救。","現在遇到類似情況，你會怎麼做。"],
+ d:"Painful as it was, I'm almost glad it happened, because…",
+ v:[["own up to","phr. v.","坦承","I decided to own up to it straight away."],
+    ["jump to conclusions","idiom","妄下結論","I jumped to conclusions without checking the facts."],
+    ["wake-up call","n.","警鐘","It was a real wake-up call."],
+    ["careless","adj.","粗心的","It was a careless mistake."],
+    ["make up for","phr. v.","彌補","I worked extra hours to make up for it."],
+    ["think twice","idiom","三思","Now I think twice before I hit send."],
+    ["blessing in disguise","idiom","因禍得福","In a way, it was a blessing in disguise."]],
+ s:["A mistake I still remember clearly happened when…","I was mortified, but looking back…"],
+ q:[{t:"Is making mistakes an important part of learning?",
+     a:["是，因為親身犯錯的記憶比別人告訴你的深刻；但要有反思才算。"],
+     v:[["learn from experience","phr.","從經驗中學習","We learn from experience far more than from advice."],["growth mindset","n.","成長型思維","Schools are trying to encourage a growth mindset."],["inevitable","adj.","不可避免的","Mistakes are inevitable when you try something new."]],
+     s:"Absolutely. I'd go as far as to say…"},
+    {t:"Why are some people afraid of admitting mistakes?",
+     a:["面子、怕被懲罰、組織文化。"],
+     v:[["admit fault","phr.","承認錯誤","In some workplaces, nobody wants to admit fault."],["save face","idiom","保住面子","People lie to save face."],["blame culture","n.","究責文化","A blame culture makes honesty risky."]],
+     s:"A lot of it has to do with…"},
+    {t:"Should children be punished when they make mistakes?",
+     a:["區分管教和懲罰；讓孩子理解後果比處罰有效。"],
+     v:[["consequences","n.","後果","Children need to understand the consequences of their actions."],["discipline","n./v.","管教","Discipline is not the same as punishment."],["harsh","adj.","嚴厲的","Harsh punishment only teaches them to hide things."]],
+     s:"It depends what we mean by punishment…"},
+    {t:"Do people learn more from success or from failure?",
+     a:["失敗逼人反思，成功容易讓人自滿；但成功給人信心。"],
+     v:[["reflect on","phr. v.","反思","Failure forces you to reflect on what went wrong."],["complacent","adj.","自滿的","Success can make people complacent."],["bounce back","phr. v.","重新振作","What matters is how quickly you bounce back."]],
+     s:"Probably from failure, although…"}]},
+
+{id:"c32",cat:"experience",t:"Describe a goal you want to achieve in the future.",
+ p:["what the goal is","when you set it","what you need to do to achieve it","and explain why it is important to you."],
+ a:["目標背後的動機：為了誰、想證明什麼。","講具體計畫和最大的阻礙，顯示你認真想過。"],
+ d:"混用時態：I've been working towards it for…, and by this time next year I hope to have…",
+ v:[["set my sights on","idiom","以…為目標","I've set my sights on studying abroad."],
+    ["work towards","phr. v.","朝…努力","I've been working towards it for two years."],
+    ["stay motivated","phr.","保持動力","The hardest part is staying motivated."],
+    ["stepping stone","n.","墊腳石","This exam is a stepping stone to that."],
+    ["ambitious","adj.","有野心的、宏大的","It's an ambitious plan, I know."],
+    ["make it happen","phr.","讓它實現","I'm determined to make it happen."],
+    ["in the long run","phr.","長遠來看","In the long run, it will open a lot of doors."]],
+ s:["A goal I've set for myself is to…","I know it won't be easy, but…"],
+ q:[{t:"Why is it important to set goals?",
+     a:["方向、動力、衡量進度；但目標太死也會讓人錯過機會。"],
+     v:[["sense of direction","n.","方向感","Goals give you a sense of direction."],["measure progress","phr.","衡量進度","You need targets to measure progress."],["drift","v.","漫無目的地過","Without them, people tend to drift."]],
+     s:"Mainly because they give you something to aim for…"},
+    {t:"Do young people today have different ambitions from their parents' generation?",
+     a:["上一代重穩定，這一代重意義與自主；背後是經濟環境不同。"],
+     v:[["job security","n.","工作保障","My parents valued job security above all."],["pursue a passion","phr.","追求熱情所在","Young people would rather pursue a passion."],["entrepreneur","n.","創業家","Many dream of becoming an entrepreneur."]],
+     s:"Very much so. My parents' generation tended to…"},
+    {t:"Is it better to have realistic goals or ambitious ones?",
+     a:["大目標加上可行的小步驟；兩者不衝突。"],
+     v:[["aim high","phr.","立定高遠的目標","I think you should aim high."],["achievable","adj.","可達成的","Break it into achievable steps."],["fall short","phr. v.","未達標","Even if you fall short, you'll have gone further."]],
+     s:"Ideally a bit of both…"},
+    {t:"How do people stay motivated over a long period?",
+     a:["拆成里程碑、找夥伴、提醒自己當初的理由。"],
+     v:[["hold myself accountable","phr.","對自己負責","Telling friends about my goal helps me hold myself accountable."],["reward","v./n.","獎勵","I reward myself after each small win."],["milestone","n.","里程碑","Celebrate every milestone along the way."]],
+     s:"What works for me is…"}]}
+);
+BANK.push(
+{id:"c33",cat:"media",t:"Describe a book you enjoyed reading.",
+ p:["what the book is","what it is about","why you decided to read it","and explain why you enjoyed it."],
+ a:["劇情用一兩句帶過就好，重點是它讓你想到什麼。","書裡的哪個觀點或角色讓你改變了看法。"],
+ d:"It made me question something I'd always taken for granted, namely…",
+ v:[["page-turner","n.","令人欲罷不能的書","It's a real page-turner."],
+    ["couldn't put it down","idiom","愛不釋手","I couldn't put it down."],
+    ["thought-provoking","adj.","發人深省的","It's a thought-provoking read."],
+    ["gripping plot","n.","扣人心弦的情節","The gripping plot kept me up at night."],
+    ["relatable","adj.","能引起共鳴的","The main character is very relatable."],
+    ["is set in","phr.","以…為背景","The story is set in postwar Japan."],
+    ["leave a lasting impression","phr.","留下深刻印象","The ending left a lasting impression on me."]],
+ s:["A book that really stayed with me is…","Without giving too much away, it's about…"],
+ q:[{t:"Do people read less than they used to?",
+     a:["讀的「量」未必少，但形式變了：短文、貼文取代長篇閱讀。"],
+     v:[["attention span","n.","專注時間","Our attention span has shrunk."],["skim","v.","略讀","We skim articles instead of reading deeply."],["bookworm","n.","書蟲","There are still plenty of bookworms around."]],
+     s:"It depends on what you count as reading…"},
+    {t:"Are e-books better than printed books?",
+     a:["便利對比體驗；看用途，通勤用電子書，深讀用紙本。"],
+     v:[["portable","adj.","便於攜帶的","E-readers are light and portable."],["flip through","phr. v.","翻閱","I like to flip through real pages."],["eye strain","n.","眼睛疲勞","Reading on a screen causes eye strain."]],
+     s:"Each has its place, I think…"},
+    {t:"Why is it important for children to read?",
+     a:["語言能力、想像力、同理心；也是親子互動的時間。"],
+     v:[["imagination","n.","想像力","Stories feed a child's imagination."],["vocabulary","n.","詞彙量","Reading widens their vocabulary."],["bedtime story","n.","床邊故事","A bedtime story builds the habit early."]],
+     s:"For several reasons, the most obvious being…"},
+    {t:"Will libraries still exist in the future?",
+     a:["功能會轉型：從借書的地方變成社區空間與數位資源中心。"],
+     v:[["obsolete","adj.","過時、被淘汰的","Some people think libraries will become obsolete."],["community hub","n.","社區中心","They're turning into community hubs."],["free access","n.","免費使用","They give everyone free access to knowledge."]],
+     s:"I think they will, though in a rather different form…"}]},
+
+{id:"c34",cat:"media",t:"Describe a film you enjoyed.",
+ p:["what the film is","when you watched it","what it is about","and explain why you liked it."],
+ a:["挑一場戲來講，而不是交代整部劇情。","它傳達的主題和現實有什麼關聯。"],
+ d:"On the surface it's a comedy, but underneath it's really about…",
+ v:[["blockbuster","n.","賣座大片","It was last summer's biggest blockbuster."],
+    ["based on a true story","phr.","改編自真實故事","It's based on a true story."],
+    ["stunning visuals","n.","驚豔的畫面","The film has stunning visuals."],
+    ["plot twist","n.","劇情轉折","There's a plot twist I didn't see coming."],
+    ["heartwarming","adj.","溫馨感人的","It's a heartwarming story about family."],
+    ["on the edge of my seat","idiom","緊張得坐立難安","I was on the edge of my seat throughout."],
+    ["cast","n.","演員陣容","The cast is outstanding."],
+    ["soundtrack","n.","電影配樂","The soundtrack is unforgettable."]],
+ s:["A film I could watch again and again is…","What sets it apart from other films in the genre is…"],
+ q:[{t:"Why do people enjoy watching films?",
+     a:["逃離現實、情感宣洩、社交話題。"],
+     v:[["escape from reality","phr.","逃離現實","Films offer an escape from reality."],["emotionally invested","adj.","情感投入的","We get emotionally invested in the characters."],["genre","n.","類型","Everyone has a favorite genre."]],
+     s:"I think films let us experience things we never could in real life…"},
+    {t:"Is watching a film at the cinema better than watching at home?",
+     a:["沉浸感與儀式感，對比便利與價格；看片型。"],
+     v:[["big screen","n.","大銀幕","Some films are made for the big screen."],["streaming service","n.","串流平台","A streaming service is cheaper and more convenient."],["immersive","adj.","身歷其境的","The cinema is a far more immersive experience."]],
+     s:"For certain films, definitely…"},
+    {t:"Do films influence how people behave?",
+     a:["會，尤其是年輕人；但影響有正有負，舉例。"],
+     v:[["glorify violence","phr.","美化暴力","Some films glorify violence."],["raise awareness","phr.","喚起關注","Documentaries can raise awareness of social issues."],["stereotype","n.","刻板印象","Films can reinforce a stereotype or break it."]],
+     s:"More than we'd like to admit, I think…"},
+    {t:"Should the government support the local film industry?",
+     a:["文化輸出與在地故事，對比市場機制；補助該給誰。"],
+     v:[["funding","n.","資金","Local directors struggle to get funding."],["compete with","phr. v.","與…競爭","They can't compete with Hollywood budgets."],["showcase","v.","展現","Films showcase our culture to the world."]],
+     s:"I'd say yes, because otherwise…"}]},
+
+{id:"c35",cat:"media",t:"Describe an app or website you often use.",
+ p:["what it is","how often you use it","what you use it for","and explain why you find it useful."],
+ a:["講一個具體的使用情境，以及它取代了你原本的哪個做法。","你對它的矛盾心情：方便，但佔時間、有隱私疑慮。"],
+ d:"It's brilliantly designed, which is exactly the problem: it's hard to stop.",
+ v:[["intuitive","adj.","直覺好用的","The layout is clean and intuitive."],
+    ["scroll through","phr. v.","滑、瀏覽","I scroll through it on the bus."],
+    ["hooked on","adj.","沉迷於","I have to admit I'm a bit hooked on it."],
+    ["all in one place","phr.","集中在一處","It keeps my notes all in one place."],
+    ["come in handy","idiom","派上用場","It comes in handy when I'm traveling."],
+    ["notifications","n.","通知","I've turned off most notifications."],
+    ["free of charge","phr.","免費","The basic version is free of charge."]],
+ s:["An app I use practically every day is…","I first downloaded it because…"],
+ q:[{t:"Why are some apps so addictive?",
+     a:["設計上的刻意：演算法、無限滑動、通知；對應的是人的心理弱點。"],
+     v:[["addictive","adj.","令人上癮的","Short videos are highly addictive."],["algorithm","n.","演算法","The algorithm learns exactly what you like."],["endless scrolling","n.","無止盡的滑動","Endless scrolling removes any natural stopping point."]],
+     s:"They're designed that way, quite deliberately…"},
+    {t:"Is people's privacy at risk online?",
+     a:["是；我們用資料交換免費服務，卻很少意識到。個人與法規各能做什麼。"],
+     v:[["personal data","n.","個人資料","Companies collect huge amounts of personal data."],["data breach","n.","資料外洩","Hardly a month goes by without a data breach."],["terms and conditions","n.","條款與細則","Nobody actually reads the terms and conditions."]],
+     s:"Very much so, and most of us don't realize how much…"},
+    {t:"Should children's screen time be limited?",
+     a:["應該，但重點是內容和陪伴，而不只是時數。"],
+     v:[["set limits","phr.","設下限制","Parents need to set limits."],["parental controls","n.","家長監護功能","Parental controls can only do so much."],["in moderation","phr.","適度地","Screens are fine in moderation."]],
+     s:"Yes, though I think what they watch matters more than how long…"},
+    {t:"How has the internet changed the way people communicate?",
+     a:["更頻繁、更即時，但更短、更容易誤解；面對面的深度對話變少。"],
+     v:[["instant messaging","n.","即時通訊","Instant messaging has replaced phone calls."],["keep in touch","phr.","保持聯絡","It's easier than ever to keep in touch."],["misinterpret","v.","誤解","Text messages are easy to misinterpret."]],
+     s:"We communicate more often, but arguably less deeply…"}]},
+
+{id:"c36",cat:"media",t:"Describe a song that is meaningful to you.",
+ p:["what the song is","when you first heard it","what it is about","and explain why it is meaningful to you."],
+ a:["這首歌連結到的人生時期或某個人。","音樂如何影響你的情緒或專注。"],
+ d:"Whenever I hear the opening notes, I'm instantly back in…，用歌帶出一段記憶。",
+ v:[["catchy","adj.","朗朗上口的","The chorus is incredibly catchy."],
+    ["lyrics","n.","歌詞","The lyrics really speak to me."],
+    ["on repeat","phr.","重複播放","I had it on repeat for weeks."],
+    ["take me back to","phr.","讓我回到某段時期","It takes me back to my high school days."],
+    ["lift my mood","phr.","讓心情變好","It never fails to lift my mood."],
+    ["strike a chord","idiom","觸動心弦","The song struck a chord with me."],
+    ["melody","n.","旋律","It has a simple, haunting melody."]],
+ s:["A song that means a lot to me is…","I first came across it when…"],
+ q:[{t:"Why is music important to people?",
+     a:["情緒調節、身分認同、連結他人。"],
+     v:[["universal language","n.","共通的語言","Music is often called a universal language."],["evoke emotions","phr.","喚起情緒","It can evoke emotions that words can't."],["outlet","n.","抒發管道","For teenagers, it's an emotional outlet."]],
+     s:"I think it reaches people in a way that few other things can…"},
+    {t:"Should all children learn a musical instrument?",
+     a:["有好處但不該強迫；資源不均也是問題。"],
+     v:[["perseverance","n.","毅力","Learning an instrument teaches perseverance."],["extracurricular","adj.","課外的","It shouldn't just be an extracurricular activity for the rich."],["talent","n.","天分","Not every child has the talent or the interest."]],
+     s:"I think every child should have the chance, but…"},
+    {t:"How has technology changed the way people listen to music?",
+     a:["從擁有到訂閱、從專輯到歌單；選擇變多但也更零碎。"],
+     v:[["streaming platform","n.","串流平台","Streaming platforms give us millions of songs."],["playlist","n.","歌單","People listen to playlists rather than albums."],["discover new artists","phr.","發掘新歌手","It's much easier to discover new artists."]],
+     s:"It has changed almost everything about it…"},
+    {t:"Is traditional music still popular among young people in your country?",
+     a:["不是主流，但有融合與復興的例子。"],
+     v:[["mainstream","adj.","主流的","Traditional music is far from mainstream."],["fusion","n.","融合","Some bands create a fusion of old and new."],["revival","n.","復興","There's been a small revival recently."]],
+     s:"Not especially, to be honest, although…"}]},
+
+{id:"c37",cat:"activity",t:"Describe a hobby you enjoy.",
+ p:["what the hobby is","when you started it","how often you do it","and explain why you enjoy it."],
+ a:["它讓你進入的狀態：忘記時間、暫時不想工作。","它對你其他面向的影響，例如社交、紀律、創意。"],
+ d:"It's the one activity where I'm not trying to achieve anything, and that's precisely why I love it.",
+ v:[["take up","phr. v.","開始從事（嗜好）","I took up photography about three years ago."],
+    ["lose track of time","idiom","忘了時間","I completely lose track of time when I'm drawing."],
+    ["take my mind off","idiom","讓我暫時不去想","It takes my mind off work."],
+    ["passionate about","phr.","對…充滿熱情","I'm really passionate about it."],
+    ["creative outlet","n.","創意的抒發管道","It's my main creative outlet."],
+    ["keen on","adj.","熱衷於","I've been keen on it since childhood."],
+    ["therapeutic","adj.","有療癒效果的","I find it quite therapeutic."]],
+ s:["Something I do whenever I have free time is…","I got into it more or less by accident…"],
+ q:[{t:"Why is it important to have hobbies?",
+     a:["紓壓、工作以外的身分、社交。"],
+     v:[["relieve stress","phr.","紓解壓力","Hobbies help to relieve stress."],["well-being","n.","身心健康","They're good for your overall well-being."],["sense of identity","n.","自我認同","A hobby gives you a sense of identity beyond your job."]],
+     s:"I think everyone needs something that isn't work…"},
+    {t:"Do people have less free time than in the past?",
+     a:["時數未必少，但被切碎了，也常被工作訊息打斷。"],
+     v:[["work long hours","phr.","長時間工作","People work long hours and commute even longer."],["leisure time","n.","休閒時間","Our leisure time is constantly interrupted."],["juggle","v.","同時兼顧","Parents juggle work, kids and housework."]],
+     s:"It certainly feels that way, though I suspect…"},
+    {t:"Are hobbies becoming more expensive?",
+     a:["有些是（裝備、課程），但也有免費的選擇；社群帶動了裝備競賽。"],
+     v:[["gear","n.","裝備","Some people spend a fortune on gear."],["affordable","adj.","負擔得起的","Plenty of hobbies are still affordable."],["monetize","v.","變現","Nowadays people even try to monetize their hobbies."]],
+     s:"Some of them, certainly…"},
+    {t:"Should hobbies be useful, or just fun?",
+     a:["純粹好玩本身就有價值；把嗜好變成副業的風險。"],
+     v:[["for its own sake","idiom","純粹為了它本身","I believe in doing things for their own sake."],["productive","adj.","有生產力的","Not everything has to be productive."],["side hustle","n.","副業","Turning a hobby into a side hustle can ruin it."]],
+     s:"I'd argue that being fun is useful in itself…"}]},
+
+{id:"c38",cat:"activity",t:"Describe a sport or exercise you do to keep fit.",
+ p:["what it is","how often you do it","where you do it","and explain why you enjoy it."],
+ a:["不只講健康；講它對心情、自律、社交的作用。","你怎麼度過不想動的日子。"],
+ d:"The physical benefits are obvious, but what keeps me going is the mental clarity afterwards.",
+ v:[["keep in shape","idiom","保持體態","I swim twice a week to keep in shape."],
+    ["work out","phr. v.","健身、運動","I usually work out in the evening."],
+    ["build up my stamina","phr.","增強體力","Running has really built up my stamina."],
+    ["stick to","phr. v.","堅持","The hard part is sticking to a routine."],
+    ["feel refreshed","phr.","感到神清氣爽","Afterwards I always feel refreshed."],
+    ["get into the habit of","phr.","養成…的習慣","I got into the habit of jogging before class."],
+    ["sweat it out","idiom","流汗把壓力排掉","When I'm stressed, I just sweat it out."]],
+ s:["The main way I keep fit is…","I'm not exactly an athlete, but…"],
+ q:[{t:"Why don't many people exercise regularly?",
+     a:["時間、動機、環境；不只是「懶」。"],
+     v:[["lack of willpower","n.","缺乏意志力","People blame a lack of willpower."],["desk job","n.","坐辦公室的工作","Most of us have a desk job."],["make excuses","phr.","找藉口","It's easy to make excuses when you're tired."]],
+     s:"Time is the usual excuse, but I think the real reason is…"},
+    {t:"Should governments encourage people to be more active?",
+     a:["公共衛生的理由；用設施與誘因，而不是強迫。"],
+     v:[["public health","n.","公共衛生","Inactivity is a public health issue."],["sports facilities","n.","運動設施","They could build more free sports facilities."],["incentive","n.","誘因","A tax break could be an incentive to join a gym."]],
+     s:"Yes, and not just for people's own sake…"},
+    {t:"Are professional athletes good role models for children?",
+     a:["紀律與毅力值得學，但也有負面案例；孩子需要大人引導。"],
+     v:[["dedication","n.","投入、奉獻","Their dedication is inspiring."],["sportsmanship","n.","運動家精神","Children learn about sportsmanship from them."],["scandal","n.","醜聞","A doping scandal sends the wrong message."]],
+     s:"Many of them are, though not all…"},
+    {t:"Do you think competitive sport is good for children?",
+     a:["學會輸贏與合作，但過度強調勝負會造成壓力。"],
+     v:[["team spirit","n.","團隊精神","It teaches team spirit."],["cope with losing","phr.","面對失敗","Children learn to cope with losing."],["under pressure","phr.","承受壓力","Too much focus on winning puts kids under pressure."]],
+     s:"On the whole, yes, as long as…"}]},
+
+{id:"c39",cat:"activity",t:"Describe a skill you would like to learn.",
+ p:["what the skill is","why you want to learn it","how you would learn it","and explain how it would help you."],
+ a:["為什麼是「現在」想學；之前是什麼阻止了你。","學會之後的生活會是什麼畫面。"],
+ d:"用假設與未來：If I could speak it fluently, I'd be able to…; I'm planning to…",
+ v:[["have always wanted to","phr.","一直想要","I have always wanted to learn sign language."],
+    ["sign up for","phr. v.","報名","I'm planning to sign up for a course."],
+    ["come naturally to me","phr.","對我來說很自然","Languages don't come naturally to me."],
+    ["commit to","phr. v.","投入、承諾","I need to commit to practicing every day."],
+    ["open doors","idiom","開啟機會","It would open doors in my career."],
+    ["fluent","adj.","流利的","I'd love to be fluent one day."],
+    ["valuable asset","n.","寶貴的資產","It would be a valuable asset in any job."]],
+ s:["Something I've been meaning to learn for ages is…","The main thing holding me back so far has been…"],
+ q:[{t:"Why do people keep learning after finishing school?",
+     a:["職場需要，以及純粹的興趣；兩種動機。"],
+     v:[["lifelong learning","n.","終身學習","Lifelong learning has become a necessity."],["stay competitive","phr.","保持競爭力","People study to stay competitive."],["out of curiosity","phr.","出於好奇","Others learn purely out of curiosity."]],
+     s:"Partly out of necessity, and partly because…"},
+    {t:"Which is more useful: learning from a teacher or teaching yourself?",
+     a:["初學需要引導，進階靠自學；兩者互補。"],
+     v:[["self-taught","adj.","自學的","A lot of programmers are self-taught."],["guidance","n.","指導","Beginners need guidance."],["bad habits","n.","壞習慣","Without a teacher, you can pick up bad habits."]],
+     s:"It depends on the stage you're at…"},
+    {t:"Will AI change the skills people need?",
+     a:["重複性工作會被取代，判斷力與創意更重要；持續學習成為常態。"],
+     v:[["automate","v.","自動化","Routine tasks will be automated."],["creativity","n.","創造力","Creativity will be harder to replace."],["adapt to change","phr.","適應變化","The key skill will be the ability to adapt to change."]],
+     s:"Almost certainly. I'd imagine…"},
+    {t:"Is learning a foreign language still necessary now that we have translation apps?",
+     a:["工具能傳達字面，傳達不了文化與關係；學語言也是學另一種思考方式。"],
+     v:[["lost in translation","idiom","在翻譯中流失","Humor often gets lost in translation."],["nuance","n.","細微差異","Apps can't capture every nuance."],["language barrier","n.","語言隔閡","They do help break the language barrier."]],
+     s:"I'd say so, because language is about more than words…"}]},
+
+{id:"c40",cat:"activity",t:"Describe a daily routine you enjoy.",
+ p:["what the routine is","when you do it","how long you have been doing it","and explain why you enjoy it."],
+ a:["小事的儀式感：為什麼這個時段對你重要。","沒做的那一天，有什麼不同。"],
+ d:"It's a small thing, but it gives structure to an otherwise chaotic day.",
+ v:[["early bird","idiom","早起的人","I'm an early bird by nature."],
+    ["start the day","phr.","開始一天","It's my favorite way to start the day."],
+    ["me time","n.","屬於自己的時間","That half hour is my only me time."],
+    ["set the tone","idiom","定下基調","It sets the tone for the rest of the day."],
+    ["wind down","phr. v.","放鬆下來","Reading helps me wind down before bed."],
+    ["without fail","idiom","從不間斷","I do it every morning without fail."],
+    ["ritual","n.","儀式、例行習慣","Making coffee has become a little ritual."]],
+ s:["One part of my day I really look forward to is…","It might sound trivial, but…"],
+ q:[{t:"Is it important to have a daily routine?",
+     a:["省下做決定的力氣，帶來穩定；但太固定會僵化。"],
+     v:[["structure","n.","規律、架構","A routine gives your day structure."],["autopilot","n.","自動駕駛的狀態","Good habits let you run on autopilot."],["in a rut","idiom","一成不變","Too much routine and you're stuck in a rut."]],
+     s:"I think so, mainly because…"},
+    {t:"Do people's routines change as they get older?",
+     a:["學生、上班、成家、退休，每個階段的時間由誰決定。"],
+     v:[["settle down","phr. v.","安定下來","Once people settle down, life becomes more predictable."],["responsibilities","n.","責任","More responsibilities mean less freedom."],["flexible","adj.","有彈性的","Students have far more flexible schedules."]],
+     s:"Inevitably. When you're a student…, whereas…"},
+    {t:"How do weekdays differ from weekends for most people?",
+     a:["平日被行程推著走，週末補眠、處理雜事；真正休息的時間其實不多。"],
+     v:[["sleep in","phr. v.","睡到自然醒","On weekends I like to sleep in."],["run errands","phr.","辦雜事","Saturday is for running errands."],["commute","n./v.","通勤","There's no commute, which is a huge relief."]],
+     s:"During the week everything revolves around…"},
+    {t:"Is it good for children to have a strict routine?",
+     a:["規律帶來安全感，但要留空白讓孩子自由玩。"],
+     v:[["bedtime","n.","就寢時間","A fixed bedtime is good for young children."],["sense of security","n.","安全感","Routine gives them a sense of security."],["rigid","adj.","僵化的","But it shouldn't be so rigid that there's no room for play."]],
+     s:"A certain amount of routine is healthy, but…"}]}
+);
+/* 表達工具箱：依情境整理的通用口說表達。
+   items: [片語, 中文, 例句, 比對用關鍵字（省略則由片語自動產生；空字串表示不比對）] */
+const TOOLBOX = [
+{id:"add",title:"補充資訊",when:"想再多說一點，卻又要脫口而出 and 的時候",weak:["and","also"],
+ items:[
+  ["On top of that,","除此之外","The rent is low. On top of that, it's five minutes from the station."],
+  ["What's more,","更何況","It's free. What's more, you can use it offline."],
+  ["Besides,","再說","I didn't feel like going out. Besides, it was pouring."],
+  ["Not only that, but","不只這樣","Not only that, but it also taught me to be patient."],
+  ["Another thing is that","另一點是","Another thing is that people have less time than before."],
+  ["as well as","以及","It helps with stress as well as sleep."],
+  ["not to mention","更不用說","It's expensive, not to mention time-consuming."]],
+ tip:"Moreover、Furthermore、In addition 是寫作用語，放在口說裡聽起來像在背稿。請改用上面這些。"},
+
+{id:"reason",title:"說明原因",when:"每個原因都用 because 開頭的時候",weak:["because"],
+ items:[
+  ["The main reason is that","主要原因是","The main reason is that rents have gone up so much."],
+  ["That's mainly because","這主要是因為","That's mainly because people work longer hours."],
+  ["It comes down to","歸根究柢是","I think it comes down to convenience."],
+  ["which is why","這就是為什麼","I grew up by the sea, which is why I love swimming."],
+  ["thanks to","多虧","Thanks to online courses, anyone can learn it."],
+  ["partly because","部分是因為","Partly because of the cost, and partly because of the time."],
+  ["since","既然、因為","Since I live alone, I rarely cook."]],
+ tip:"先講結果再補原因，句子會自然變長：People eat out more, and that's mainly because…"},
+
+{id:"result",title:"說明結果",when:"一直用 so 接下一句的時候",weak:["so"],
+ items:[
+  ["As a result,","結果","As a result, fewer people are buying homes."],
+  ["That's why","這就是為什麼","That's why I ended up changing my major."],
+  ["which means","這代表","Everything is online now, which means you never really switch off."],
+  ["so much so that","到了…的程度","I loved it, so much so that I went back twice."],
+  ["end up","最後變成","We ended up staying until midnight."],
+  ["lead to","導致","Too much screen time can lead to poor sleep."],
+  ["in turn","進而","Prices rise, which in turn pushes young people out."]],
+ tip:"which means、which is why 這類關係子句屬於複雜句，文法分數也會受益。"},
+
+{id:"contrast",title:"轉折與對比",when:"想講另一面，但只想得到 but 的時候",weak:["but"],
+ items:[
+  ["That said,","話雖如此","It's convenient. That said, it isn't cheap."],
+  ["Having said that,","話說回來","Having said that, I can see why people like it."],
+  ["Then again,","不過話又說回來","Then again, maybe I'm just old-fashioned."],
+  ["On the other hand,","另一方面","On the other hand, it creates a lot of waste."],
+  ["whereas","而（對比兩者）","My parents read newspapers, whereas I get news from my phone."],
+  ["even though","即使","Even though it was raining, we had a great time."],
+  ["on the flip side","反過來看","On the flip side, you lose your privacy."],
+  ["Mind you,","不過要說明的是","Mind you, that was ten years ago."]],
+ tip:"However 可以用，但一直用會像作文。口說多用 That said、Then again。"},
+
+{id:"example",title:"舉例",when:"講完觀點，需要一個例子撐住的時候",weak:["for example"],
+ items:[
+  ["For instance,","舉例來說","For instance, my cousin works entirely from home."],
+  ["A good example is","一個好例子是","A good example is the way we pay for things now."],
+  ["Take … for example.","拿…來說","Take my hometown, for example.",""],
+  ["such as","例如","I like outdoor activities such as hiking and cycling."],
+  ["In my case,","以我來說","In my case, I learned more from failing."],
+  ["Speaking from experience,","就我的經驗","Speaking from experience, it takes about a year."],
+  ["like when","就像…的時候","It's stressful, like when you have three deadlines in one week."]],
+ tip:"高分回答幾乎都有個人例子。講完觀點就接 In my case…，內容會立刻具體起來。"},
+
+{id:"opinion",title:"表達看法",when:"每句都用 I think 開頭的時候",weak:["I think"],
+ items:[
+  ["I'd say","我會說","I'd say it depends on your age."],
+  ["From my point of view,","在我看來","From my point of view, it's a waste of money."],
+  ["It seems to me that","我覺得似乎","It seems to me that people are busier than ever."],
+  ["I'm convinced that","我確信","I'm convinced that reading matters."],
+  ["As far as I'm concerned,","就我而言","As far as I'm concerned, health comes first."],
+  ["I tend to think","我傾向認為","I tend to think it's a bit of both."],
+  ["If you ask me,","要我說的話","If you ask me, it's overrated."],
+  ["Personally,","我個人","Personally, I prefer working alone."]],
+ tip:"I think 沒有錯，問題是每句都用。依把握程度換著用：很確定用 I'm convinced，有保留用 I tend to think。"},
+
+{id:"hedge",title:"保留語氣",when:"差點說出 everyone、always、never 這種太絕對的話的時候",weak:["always","everyone","never","maybe"],
+ items:[
+  ["tend to","往往","Young people tend to move to big cities."],
+  ["to some extent","在某種程度上","I agree to some extent."],
+  ["by and large","大致上","By and large, people are friendly here."],
+  ["more often than not","多半","More often than not, the cheaper option is fine."],
+  ["It depends on","要看","It depends on how much time you have."],
+  ["not necessarily","不見得","Expensive doesn't necessarily mean better.","necessarily"],
+  ["in most cases","在多數情況下","In most cases, it works out fine."],
+  ["chances are","很可能","Chances are, you already use it without noticing."]],
+ tip:"Part 3 最常見的淺答就是 Everyone thinks… 或 People always…。加上保留語氣，聽起來才像真的在思考。"},
+
+{id:"think",title:"爭取思考時間",when:"腦袋空白，快要發出 um 或陷入沉默的時候",weak:["um","uh"],
+ items:[
+  ["That's an interesting question.","這問題很有意思","That's an interesting question. I've never really thought about it.","interesting question"],
+  ["Let me think about that for a second.","讓我想一下","Let me think about that for a second.","let me think"],
+  ["I've never really thought about it, but","我沒認真想過，不過","I've never really thought about it, but I suppose it's true.","never really thought about"],
+  ["Off the top of my head,","我馬上想到的是","Off the top of my head, I'd say cost is the main issue."],
+  ["How should I put it?","該怎麼說呢","It's, how should I put it, a bit old-fashioned."],
+  ["It's hard to say, but","很難說，不過","It's hard to say, but probably yes.","hard to say"],
+  ["I guess it varies, but","我想因人而異，不過","I guess it varies, but most people my age do.","i guess it varies"]],
+ tip:"思考用語一次用一句就好，說完要馬上回答。連用兩三句會被聽出是在拖時間。"},
+
+{id:"clarify",title:"換句話說",when:"講得不清楚想重講，或一時想不到那個字的時候",weak:["卡住","重複同一個字"],
+ items:[
+  ["What I mean is","我的意思是","What I mean is, it's not about the money."],
+  ["In other words,","換句話說","In other words, we've stopped talking to each other."],
+  ["or rather,","或者更準確地說","It was difficult, or rather, unfamiliar."],
+  ["To put it another way,","換個說法","To put it another way, less is more."],
+  ["I can't think of the exact word, but it's a kind of","我想不到確切的字，它是一種","I can't think of the exact word, but it's a kind of tool for opening bottles.","can't think of the exact word"],
+  ["the thing you use to","你用來…的東西","It's the thing you use to charge your phone.","thing you use to"],
+  ["something along those lines","類似這樣的","A manager, or something along those lines."]],
+ tip:"換句話說的能力是 7 分詞彙項目的要求之一。忘字時不要停下來，用描述繞過去。"},
+
+{id:"time",title:"比較過去與現在",when:"題目問「有什麼改變」的時候",weak:["before","now"],
+ items:[
+  ["Back then,","那時候","Back then, nobody had a smartphone."],
+  ["Back in the day,","以前那個年代","Back in the day, kids played outside until dark."],
+  ["used to","以前常常","People used to write letters."],
+  ["These days,","現在","These days, everything is done online."],
+  ["Nowadays,","如今","Nowadays, most couples both work."],
+  ["Compared with the past,","和過去相比","Compared with the past, we have far more choices."],
+  ["over the past few years","過去這幾年","It has changed a lot over the past few years."],
+  ["no longer","不再","It's no longer seen as unusual."]],
+ tip:"Part 3 很愛問變化。把時態切清楚：過去用 used to，到目前為止的變化用現在完成式。"},
+
+{id:"hypo",title:"假設與推測",when:"談未來、談解決辦法，或想展現複雜文法的時候",weak:["maybe","will"],
+ items:[
+  ["If I were","如果我是","If I were the mayor, I'd build more parks."],
+  ["If I had the chance,","如果有機會","If I had the chance, I'd live abroad for a year."],
+  ["I'd imagine","我猜想","I'd imagine it's even harder now."],
+  ["Supposing","假設","Supposing everyone worked from home, city centers would empty out."],
+  ["It's likely that","很有可能","It's likely that cash will disappear.","likely that"],
+  ["may well","很可能會","Prices may well keep rising."],
+  ["I wouldn't be surprised if","如果…我也不意外","I wouldn't be surprised if robots did most of the driving."],
+  ["I doubt","我不認為","I doubt that will ever happen."]],
+ tip:"條件句與推測語氣是展現複雜文法最省力的方式，Part 3 每題都可以放一句。"},
+
+{id:"intens",title:"強調程度",when:"形容詞前面只會加 very 或 really 的時候",weak:["very","really"],
+ items:[
+  ["absolutely","完全（接極端形容詞）","The view was absolutely stunning."],
+  ["extremely","極度","It's extremely competitive."],
+  ["incredibly","難以置信地","She's incredibly patient."],
+  ["highly","高度（接 unlikely、recommended、skilled）","It's highly unlikely to change."],
+  ["deeply","深深地（接情感）","I was deeply moved."],
+  ["by far","遠遠地（接最高級）","It's by far the best meal I've had."],
+  ["fairly","還算","It's fairly cheap."],
+  ["a bit of a","有點算是","It was a bit of a disaster.","bit of a disaster"]],
+ tip:"副詞要和形容詞搭配：absolutely 接極端的詞（exhausted、essential），不接 tired、important。把 very tired 直接換成 exhausted，比加副詞更好。"},
+
+{id:"adj",title:"形容詞升級",when:"只想得到 good、bad、important、interesting 的時候",weak:["good","bad","important","interesting","a lot of"],
+ items:[
+  ["rewarding","有收穫的（取代 good）","Teaching is a rewarding job."],
+  ["worthwhile","值得的（取代 good）","It was a worthwhile experience."],
+  ["beneficial","有益的（取代 good for）","Regular exercise is beneficial for sleep."],
+  ["impressive","令人佩服的（取代 good）","Her English is impressive."],
+  ["harmful","有害的（取代 bad）","Too much sugar is harmful."],
+  ["frustrating","令人挫折的（取代 bad）","The delays were frustrating."],
+  ["crucial","關鍵的（取代 important）","Sleep is crucial for memory."],
+  ["essential","必要的（取代 important）","Good communication is essential."],
+  ["fascinating","迷人的（取代 interesting）","I find history fascinating."],
+  ["eye-opening","令人大開眼界的（取代 interesting）","The trip was eye-opening."],
+  ["significant","顯著的（取代 big）","There's been a significant change."],
+  ["delighted","非常開心的（取代 happy）","I was delighted with the result."],
+  ["demanding","吃力的、要求高的（取代 hard）","It's a demanding course."],
+  ["a wide range of","各式各樣的（取代 a lot of）","The city offers a wide range of food."],
+  ["plenty of","很多（取代 a lot of）","There's plenty of time."]],
+ tip:"先說出腦中第一個字沒關係，接著用更精準的字補一句：It was good, really worthwhile actually."},
+
+{id:"like",title:"表達喜好",when:"只會說 I like 和 I don't like 的時候",weak:["I like","I don't like"],
+ items:[
+  ["I'm really into","我很迷","I'm really into indie music at the moment.","really into"],
+  ["I'm a big fan of","我很喜歡","I'm a big fan of spicy food.","big fan of"],
+  ["I can't get enough of","我愛到不行","I can't get enough of that show.","can't get enough of"],
+  ["It has grown on me","我越來越喜歡","I didn't like it at first, but it has grown on me.","grown on me"],
+  ["It's not really my thing","不太合我胃口","Clubbing is not really my thing.","not really my thing"],
+  ["I'm not that keen on","我沒那麼喜歡","I'm not that keen on seafood.","not that keen on"],
+  ["I can't stand","我受不了","I can't stand waiting in line.","can't stand"],
+  ["not my cup of tea","不是我的菜","Horror films are not my cup of tea."]],
+ tip:"Part 1 最常問喜好。準備三種強度各一句：很喜歡、普通、不喜歡，就夠用了。"},
+
+{id:"story",title:"Part 2 敘事銜接",when:"講故事時一直用 and then、after that 的時候",weak:["and then","after that"],
+ items:[
+  ["It all started when","一切從…開始","It all started when I missed the last bus."],
+  ["At first,","起初","At first, I had no idea what to do."],
+  ["Before long,","不久之後","Before long, I was completely hooked."],
+  ["As it turned out,","結果發現","As it turned out, she was my new teacher."],
+  ["To cut a long story short,","長話短說","To cut a long story short, we got lost."],
+  ["The funny thing is,","有趣的是","The funny thing is, I'd never met him before."],
+  ["Looking back,","現在回想","Looking back, it was the best decision I've made."],
+  ["What I remember most is","我印象最深的是","What I remember most is the smell of the place."],
+  ["In the end,","最後","In the end, everything worked out."]],
+ tip:"Part 2 要講滿兩分鐘，靠的是把故事分段：開頭、轉折、結果、現在的感想。這些片語就是分段的路標。"},
+
+{id:"close",title:"收尾",when:"講完了卻不知道怎麼結束，只能說 that's all 的時候",weak:["that's all"],
+ items:[
+  ["All in all,","總而言之","All in all, it was a great experience."],
+  ["So overall,","所以整體來說","So overall, I think the benefits outweigh the costs."],
+  ["At the end of the day,","說到底","At the end of the day, it's a personal choice."],
+  ["So yeah, that's why","所以這就是為什麼","So yeah, that's why it means so much to me.","so yeah"],
+  ["I guess what I'm trying to say is","我想說的是","I guess what I'm trying to say is that balance matters.","what i'm trying to say"],
+  ["That's pretty much it.","差不多就是這樣","And that's pretty much it.","pretty much it"]],
+ tip:"In conclusion、To summarize 是作文用語。口說用一句自然的收尾，然後停下來就好。"},
+
+{id:"idiom",title:"通用慣用語",when:"想讓語言更道地，而且語境剛好適合的時候",weak:[],
+ items:[
+  ["a piece of cake","輕而易舉","The first part was a piece of cake."],
+  ["cost an arm and a leg","貴得要命","Flights at New Year cost an arm and a leg."],
+  ["once in a blue moon","難得一次","I eat fast food once in a blue moon."],
+  ["in two minds","猶豫不決","I'm in two minds about moving abroad."],
+  ["the tip of the iceberg","冰山一角","What we see in the news is the tip of the iceberg."],
+  ["hit the nail on the head","一針見血","I think that article hit the nail on the head."],
+  ["call it a day","今天到此為止","Around midnight we decided to call it a day."],
+  ["easier said than done","說比做容易","Saving money is easier said than done."],
+  ["up in the air","懸而未決","My plans for next year are still up in the air."],
+  ["a blessing in disguise","因禍得福","Losing that job was a blessing in disguise."]],
+ tip:"慣用語是加分項，但硬塞會扣分。一題用一個就好，而且要確定語境對。不確定就不要用。"}
+];
+
+/* 淺層用詞：出現次數偏高時提醒，並建議替換說法 */
+const SHALLOW = [
+ {k:["and"],min:5,rate:4.5,alt:["on top of that","what's more","besides","as well as"],cat:"add"},
+ {k:["so"],min:4,rate:3,alt:["as a result","which means","that's why"],cat:"result"},
+ {k:["because"],min:3,rate:2.2,alt:["the main reason is that","which is why","it comes down to"],cat:"reason"},
+ {k:["but"],min:4,rate:2.8,alt:["that said","then again","whereas","on the other hand"],cat:"contrast"},
+ {k:["and then"],min:3,rate:1.5,alt:["before long","as it turned out","in the end"],cat:"story"},
+ {k:["very"],min:3,rate:1.8,alt:["extremely","incredibly","absolutely（接極端形容詞）"],cat:"intens"},
+ {k:["really"],min:4,rate:2.5,alt:["genuinely","incredibly","highly"],cat:"intens"},
+ {k:["i think"],min:3,rate:2,alt:["I'd say","it seems to me that","from my point of view"],cat:"opinion"},
+ {k:["good"],min:3,rate:1.6,alt:["rewarding","worthwhile","beneficial","impressive"],cat:"adj"},
+ {k:["bad"],min:2,rate:1.2,alt:["harmful","frustrating","disappointing"],cat:"adj"},
+ {k:["important"],min:3,rate:1.6,alt:["crucial","essential","plays a key role"],cat:"adj"},
+ {k:["interesting"],min:2,rate:1.2,alt:["fascinating","eye-opening","intriguing"],cat:"adj"},
+ {k:["a lot of","lots of"],min:3,rate:1.6,alt:["plenty of","a wide range of","countless"],cat:"adj"},
+ {k:["thing","things","stuff"],min:4,rate:2.2,alt:["aspect","factor","issue","feature"],cat:"adj"},
+ {k:["happy"],min:2,rate:1.2,alt:["delighted","thrilled","over the moon"],cat:"adj"},
+ {k:["maybe"],min:3,rate:1.6,alt:["perhaps","chances are","it's likely that"],cat:"hedge"},
+ {k:["for example"],min:3,rate:1.5,alt:["for instance","a good example is","in my case"],cat:"example"},
+ {k:["i like"],min:3,rate:1.6,alt:["I'm really into","I'm a big fan of","I'm keen on"],cat:"like"}
+];
+
+const FILLER_STRONG = ["um","uh","er","erm","uhm","umm","hmm","mm","ah","you know","i mean"];
+const FILLER_SOFT = ["like","actually","basically","literally","well","kind of","sort of","kinda"];
+/* ================= 基本工具 ================= */
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const rand = n => Math.floor(Math.random() * n);
+const shuffle = a => { for (let i = a.length - 1; i > 0; i--) { const j = rand(i + 1); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const fmt = s => { s = Math.max(0, Math.round(s)); return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0'); };
+
+const store = (() => {
+  let ok = true; const mem = {};
+  try { localStorage.setItem('__ielts_t', '1'); localStorage.removeItem('__ielts_t'); } catch (e) { ok = false; }
+  return {
+    ok,
+    get(k, d) { try { const v = ok ? localStorage.getItem(k) : mem[k]; return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
+    set(k, v) { const s = JSON.stringify(v); try { if (ok) localStorage.setItem(k, s); else mem[k] = s; } catch (e) { mem[k] = s; } }
+  };
+})();
+const K = { seen2: 'ielts_seen_p2', seen3: 'ielts_seen_p3', hist: 'ielts_history', vocab: 'ielts_vocab' };
+const CAT = { person: '人物', place: '地點', object: '物品', event: '事件', experience: '經驗', media: '媒體', activity: '活動' };
+
+/* ================= 題庫索引 ================= */
+const CARD = {}, Q3 = {}, LEX = {};
+const lexKey = w => w.toLowerCase().replace(/[^a-z0-9' ]+/g, ' ').replace(/\s+/g, ' ').trim();
+const cleanP = p => p.replace(/[….,?]+/g, ' ').replace(/\s+/g, ' ').trim();
+function reg(w, pos, zh, ex, src) { const k = lexKey(w); if (!LEX[k]) LEX[k] = { k, w, pos, zh, ex, src }; return k; }
+BANK.forEach(c => {
+  CARD[c.id] = c;
+  c.v.forEach(v => reg(v[0], v[1], v[2], v[3], c.t));
+  c.q.forEach((q, i) => { q.id = c.id + '-' + (i + 1); q.card = c; Q3[q.id] = q; q.v.forEach(v => reg(v[0], v[1], v[2], v[3], q.t)); });
+});
+const P2_IDS = Object.keys(CARD), P3_IDS = Object.keys(Q3);
+
+/* ================= 文字分析 ================= */
+const ARTICLES = new Set(['a', 'an', 'the']);
+const POSS = new Set(['my', 'your', 'his', 'her', 'their', 'our', 'its', 'me', 'you', 'him', 'them', 'us', 'myself', 'yourself', 'himself', 'herself', 'themselves', 'ourselves', 'someone', 'somebody']);
+const IRR = { went: 'go', gone: 'go', goes: 'go', going: 'go', took: 'take', taken: 'take', made: 'make', got: 'get', gotten: 'get', gave: 'give', given: 'give', came: 'come', kept: 'keep', left: 'leave', brought: 'bring', thought: 'think', felt: 'feel', found: 'find', taught: 'teach', spent: 'spend', grew: 'grow', grown: 'grow', ran: 'run', saw: 'see', seen: 'see', had: 'have', has: 'have', was: 'be', were: 'be', is: 'be', are: 'be', am: 'be', been: 'be', being: 'be', did: 'do', done: 'do', does: 'do', doing: 'do', said: 'say', told: 'tell', lost: 'lose', met: 'meet', held: 'hold', stood: 'stand', broke: 'break', broken: 'break', chose: 'choose', chosen: 'choose', fell: 'fall', fallen: 'fall', built: 'build', paid: 'pay', knew: 'know', known: 'know', became: 'become', began: 'begin', begun: 'begin', wrote: 'write', written: 'write', won: 'win', struck: 'strike', stuck: 'stick', rose: 'rise', risen: 'rise', overcame: 'overcome', overslept: 'oversleep', slept: 'sleep', learnt: 'learn', led: 'lead', sold: 'sell', sat: 'sit', sang: 'sing', sung: 'sing', drove: 'drive', driven: 'drive', bought: 'buy', caught: 'catch', woke: 'wake', wore: 'wear', worn: 'wear', ate: 'eat', eaten: 'eat', drew: 'draw', drawn: 'draw', threw: 'throw', flew: 'fly', spoke: 'speak', spoken: 'speak', heard: 'hear', meant: 'mean', sent: 'send', lent: 'lend', dealt: 'deal', shook: 'shake', used: 'use', using: 'use', uses: 'use', dying: 'die', died: 'die', dies: 'die', agreed: 'agree', ageing: 'aging' };
+const NOSTEM = new Set(['thing', 'bring', 'spring', 'string', 'king', 'swing', 'during', 'morning', 'evening', 'nothing', 'something', 'anything', 'everything', 'ceiling', 'wedding', 'sibling', 'this', 'always', 'perhaps', 'news', 'series', 'species', 'need', 'indeed']);
+
+function stem(w) {
+  w = w.toLowerCase().replace(/’/g, "'");
+  if (IRR[w]) w = IRR[w];
+  w = w.replace(/'s$/, '');
+  if (NOSTEM.has(w)) return w;
+  const n = w.length;
+  if (n > 4 && (w.endsWith('ies') || w.endsWith('ied'))) w = w.slice(0, -3) + 'y';
+  else if (n > 4 && w.endsWith('ing')) w = w.slice(0, -3);
+  else if (n > 3 && w.endsWith('ed') && !w.endsWith('eed')) w = w.slice(0, -2);
+  else if (n > 4 && /(s|x|z|ch|sh)es$/.test(w)) w = w.slice(0, -2);
+  else if (n > 3 && w.endsWith('s') && !/(ss|us|is)$/.test(w)) w = w.slice(0, -1);
+  if (w.length > 3 && w.endsWith('e')) w = w.slice(0, -1);
+  if (w.length > 3 && /([b-df-hj-np-tv-z])\1$/.test(w)) w = w.slice(0, -1);
+  return w;
+}
+
+const WORD_RE = /[A-Za-z0-9]+(?:['’][A-Za-z]+)*/g;
+function toks(text) {
+  const out = []; let m; WORD_RE.lastIndex = 0;
+  while ((m = WORD_RE.exec(text))) {
+    const low = m[0].toLowerCase().replace(/’/g, "'");
+    out.push({ low, st: stem(low), s: m.index, e: m.index + m[0].length });
+  }
+  return out;
+}
+const KEYS = new Map();
+function phraseKey(p) {
+  if (KEYS.has(p)) return KEYS.get(p);
+  const t = toks(p).filter(x => !ARTICLES.has(x.low));
+  const key = t.map(x => (t.length >= 3 && POSS.has(x.low)) ? '*' : x.st);
+  KEYS.set(p, key); return key;
+}
+
+const TOOLS = [];
+TOOLBOX.forEach(c => c.items.forEach(it => {
+  const k = reg(cleanP(it[0]), '表達', it[1], it[2], '表達工具箱 · ' + c.title);
+  TOOLS.push({ p: it[0], cat: c.id, title: c.title, lex: k, key: it[3] === '' ? [] : phraseKey(it[3] || it[0].replace(/…/g, ' ')) });
+}));
+TOOLS.sort((a, b) => b.key.length - a.key.length);
+
+const LIKE_PREV = new Set(['i', 'you', 'we', 'they', 'who', 'people', 'would', "i'd", "we'd", "don't", "doesn't", "didn't", 'to', 'really', 'always', 'also', 'feel', 'feels', 'felt', 'look', 'looks', 'looked', 'sound', 'sounds', 'seem', 'seems', 'is', 'was', "it's", 'just', 'not', 'much', 'things', 'stuff', 'something', 'anything', 'nothing', 'more', 'most', 'still', 'never', 'kids', 'children', 'students']);
+const KIND_PREV = new Set(['a', 'what', 'this', 'that', 'some', 'any', 'the', 'which', 'every', 'one', 'of', 'different', 'same', 'new', 'another']);
+const KNOW_PREV = new Set(['do', 'did', "don't", 'if', 'as', 'what', 'how', 'when', 'once', 'before', 'until']);
+
+function analyze(text, dur, vocab) {
+  text = text || '';
+  const T = toks(text), n = T.length;
+  const F = []; for (let i = 0; i < n; i++) if (!ARTICLES.has(T[i].low)) F.push(i);
+  const marks = new Array(n).fill(null); let gid = 0;
+  const findStem = key => {
+    const hits = [], L = key.length; if (!L) return hits;
+    for (let i = 0; i + L <= F.length; i++) {
+      let ok = true;
+      for (let j = 0; j < L; j++) { const t = T[F[i + j]]; if (key[j] === '*' ? !POSS.has(t.low) : t.st !== key[j]) { ok = false; break; } }
+      if (ok) hits.push([F[i], F[i + L - 1]]);
+    }
+    return hits;
+  };
+  const findExact = words => {
+    const hits = [], L = words.length;
+    for (let i = 0; i + L <= n; i++) { let ok = true; for (let j = 0; j < L; j++) if (T[i + j].low !== words[j]) { ok = false; break; } if (ok) hits.push([i, i + L - 1]); }
+    return hits;
+  };
+  const free = (h, minPri) => { for (let i = h[0]; i <= h[1]; i++) if (marks[i] && marks[i].pri >= minPri) return false; return true; };
+  const put = (h, cls, pri, tip) => { if (!free(h, 0)) return; gid++; for (let i = h[0]; i <= h[1]; i++) marks[i] = { cls, pri, gid, tip }; };
+
+  const used = (vocab || []).map(v => { const hits = findStem(phraseKey(v[0])); hits.forEach(h => put(h, 'm-vocab', 5, '本題加分詞彙')); return hits.length > 0; });
+
+  const tools = [];
+  TOOLS.forEach(t => {
+    const hits = findStem(t.key).filter(h => free(h, 5));
+    if (hits.length) { tools.push(t); hits.forEach(h => put(h, 'm-tool', 4, '工具箱：' + t.title)); }
+  });
+
+  const strong = [], soft = []; let strongN = 0, softN = 0;
+  FILLER_STRONG.forEach(f => {
+    let hits = findExact(f.split(' ')).filter(h => free(h, 4));
+    if (f === 'you know') hits = hits.filter(h => h[0] === 0 || !KNOW_PREV.has(T[h[0] - 1].low));
+    if (hits.length) { strong.push([f, hits.length]); strongN += hits.length; hits.forEach(h => put(h, 'm-filler', 3, '贅字')); }
+  });
+  FILLER_SOFT.forEach(f => {
+    let hits = findExact(f.split(' ')).filter(h => free(h, 3));
+    if (f === 'like') hits = hits.filter(h => h[0] === 0 || !LIKE_PREV.has(T[h[0] - 1].low));
+    if (f === 'well') hits = hits.filter(h => h[0] === 0);
+    if (f === 'kind of' || f === 'sort of') hits = hits.filter(h => h[0] === 0 || !KIND_PREV.has(T[h[0] - 1].low));
+    if (hits.length) { soft.push([f, hits.length]); softN += hits.length; hits.forEach(h => put(h, 'm-soft', 2, '口頭禪，留意頻率')); }
+  });
+
+  const shallow = [];
+  SHALLOW.forEach(sw => {
+    let c = 0, all = [];
+    sw.k.forEach(k => { const hits = findExact(k.split(' ')).filter(h => free(h, 4)); c += hits.length; all = all.concat(hits); });
+    if (!c) return;
+    const flag = c >= sw.min && (c / n * 100) >= sw.rate;
+    if (flag) { shallow.push({ label: sw.k[0], c, alt: sw.alt, cat: sw.cat }); all.forEach(h => put(h, 'm-shallow', 1, '出現次數偏高')); }
+  });
+
+  let html = '', pos = 0;
+  for (let i = 0; i < n; i++) {
+    const t = T[i], m = marks[i], prev = i > 0 ? marks[i - 1] : null, next = i < n - 1 ? marks[i + 1] : null;
+    const gap = esc(text.slice(pos, t.s));
+    const opens = m && (!prev || prev.gid !== m.gid), closes = m && (!next || next.gid !== m.gid);
+    html += gap + (opens ? `<span class="${m.cls}" title="${esc(m.tip)}">` : '') + esc(text.slice(t.s, t.e)) + (closes ? '</span>' : '');
+    pos = t.e;
+  }
+  html += esc(text.slice(pos));
+
+  const wpm = (dur >= 5 && n > 0) ? Math.round(n / (dur / 60)) : null;
+  return { n, wpm, used, usedN: used.filter(Boolean).length, tools, strong, strongN, soft, softN, shallow, html };
+}
+
+/* ================= 抽題、單字本、歷史 ================= */
+/* seen：實際回答過的題目（會保存，等於題庫進度）。SHOWN：這次開啟頁面後出現過但沒回答的題目，只用來避免「換一張」時馬上重複。 */
+const SHOWN = { [K.seen2]: new Set(), [K.seen3]: new Set() };
+const answered = it => it.done && !!it.text;
+function draw(ids, key, avoid) {
+  const seen = store.get(key, []), shown = SHOWN[key];
+  const fresh = () => ids.filter(id => !seen.includes(id) && !shown.has(id));
+  let pool = fresh(), re = false;
+  if (!pool.length && shown.size) { shown.clear(); pool = fresh().filter(id => id !== avoid); if (!pool.length) pool = fresh(); }
+  if (!pool.length) { store.set(key, []); shown.clear(); pool = ids.filter(id => id !== avoid); if (!pool.length) pool = ids.slice(); re = true; }
+  const id = pool[rand(pool.length)]; shown.add(id);
+  return { id, re };
+}
+function markSeen(key, ids) { const seen = store.get(key, []); ids.forEach(id => { if (!seen.includes(id)) seen.push(id); }); store.set(key, seen); }
+function pickP3(card) {
+  const seen = store.get(K.seen3, []);
+  const qs = shuffle(card.q.slice());
+  qs.sort((a, b) => (seen.includes(a.id) ? 1 : 0) - (seen.includes(b.id) ? 1 : 0));
+  return qs.slice(0, 3);
+}
+
+let starSet = new Set(store.get(K.vocab, []).map(v => v.k));
+function toggleStar(k) {
+  let list = store.get(K.vocab, []);
+  if (starSet.has(k)) list = list.filter(v => v.k !== k);
+  else if (LEX[k]) list.unshift(Object.assign({ ts: Date.now() }, LEX[k]));
+  store.set(K.vocab, list); starSet = new Set(list.map(v => v.k));
+  return starSet.has(k);
+}
+const starBtn = k => { const on = starSet.has(k); return `<button class="star${on ? ' on' : ''}" data-act="star" data-k="${esc(k)}" aria-pressed="${on}" aria-label="${on ? '取消收藏' : '收藏到單字本'}" title="${on ? '取消收藏' : '收藏到單字本'}">${on ? '★' : '☆'}</button>`; };
+
+function saveSession() {
+  const s = S.sess; if (!s) return;
+  const items = s.items.filter(answered).map(it => ({ kind: it.kind, rid: it.ref.id, q: it.ref.t, text: it.text, dur: it.dur }));
+  let h = store.get(K.hist, []);
+  const i = h.findIndex(x => x.id === s.id);
+  if (!items.length) { if (i >= 0) { h.splice(i, 1); store.set(K.hist, h); } return; }
+  const rec = { id: s.id, ts: s.ts, mode: s.mode, title: s.mode === 'A' ? s.card.t : 'Part 3 連續練習', items };
+  if (i >= 0) h[i] = rec; else h.unshift(rec);
+  if (h.length > 200) h.length = 200;
+  store.set(K.hist, h);
+}
+
+/* ================= 錄音與辨識 ================= */
+const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+const IS_ANDROID = /Android/i.test(navigator.userAgent);
+const R = {}; const P = { tick: null, t0: 0 };
+
+function recReset() {
+  clearInterval(R.tick); clearTimeout(R.killer);
+  const old = R.r; R.r = null; if (old) { try { old.abort(); } catch (e) { } }
+  Object.assign(R, { on: false, done: false, manual: false, base: '', sess: '', interim: '', t0: 0, dur: 0, limit: 0, errs: 0, fatal: null, onDone: null, tick: null, killer: null });
+}
+const recElapsed = () => R.t0 ? (Date.now() - R.t0) / 1000 : 0;
+function startClock() { if (R.t0) return; R.t0 = Date.now(); R.tick = setInterval(() => { paintClock(); if (R.on && R.limit && recElapsed() >= R.limit) recStop(); }, 200); paintClock(); }
+function setRecState(txt, live) { const a = $('#recState'), d = $('#dot'); if (a) a.textContent = txt; if (d) d.classList.toggle('on', !!live); }
+
+function recBegin(limit, onDone, manual) {
+  recReset(); R.limit = limit; R.onDone = onDone; R.on = true; R.manual = !!manual || !SR;
+  if (R.manual) { startClock(); setRecState('手動輸入模式，計時中', true); return; }
+  spawn();
+}
+function spawn() {
+  const r = new SR(); R.r = r;
+  r.lang = 'en-US'; r.continuous = !IS_ANDROID; r.interimResults = true; r.maxAlternatives = 1;
+  r.onstart = () => { if (R.r !== r) return; startClock(); setRecState('錄音中，請開始說話', true); };
+  r.onresult = e => {
+    if (R.r !== r) return;
+    let fin = '', inter = '';
+    for (let i = 0; i < e.results.length; i++) { const res = e.results[i], t = res[0].transcript.trim(); if (!t) continue; if (res.isFinal) fin += t + ' '; else inter += t + ' '; }
+    R.sess = fin.trim(); R.interim = inter.trim(); R.errs = 0; paintLive();
+  };
+  r.onerror = e => {
+    if (R.r !== r) return;
+    const c = e.error;
+    if (c === 'no-speech' || c === 'aborted') return;
+    if (c === 'not-allowed' || c === 'service-not-allowed' || c === 'audio-capture') R.fatal = c;
+    else if (++R.errs >= 4) R.fatal = c;
+  };
+  r.onend = () => {
+    if (R.r !== r) return;
+    commit();
+    if (R.fatal) { R.on = false; clearInterval(R.tick); R.dur = recElapsed(); showRecError(R.fatal); return; }
+    if (R.on) setTimeout(() => { if (R.on && R.r === r) spawn(); }, 200);
+    else finish();
+  };
+  try { r.start(); } catch (err) { R.fatal = 'start-failed'; R.on = false; showRecError(R.fatal); }
+}
+function commit() { const add = [R.sess, R.interim].filter(Boolean).join(' '); if (add) R.base = (R.base + ' ' + add).trim(); R.sess = ''; R.interim = ''; }
+function recStop() {
+  if (!R.on) return;
+  R.on = false; R.dur = recElapsed(); clearInterval(R.tick);
+  if (R.manual || !R.r) return finish();
+  setRecState('整理逐字稿中…', false);
+  try { R.r.stop(); } catch (e) { }
+  R.killer = setTimeout(finish, 1800);
+}
+function finish() {
+  if (R.done) return; R.done = true; clearTimeout(R.killer); commit();
+  const r = R.r; R.r = null; if (r) { try { r.abort(); } catch (e) { } }
+  let text = R.base.trim();
+  if (R.manual) { const m = $('#manual'); text = m ? m.value.trim() : ''; }
+  const cb = R.onDone; if (cb) cb(text, Math.round(R.dur));
+}
+function paintLive() {
+  const el = $('#live'); if (!el) return;
+  const fin = [R.base, R.sess].filter(Boolean).join(' ');
+  if (!fin && !R.interim) return;
+  el.innerHTML = esc(fin) + (R.interim ? ` <span class="int">${esc(R.interim)}</span>` : '');
+  el.scrollTop = el.scrollHeight;
+}
+function showRecError(code) {
+  setRecState('麥克風已停止', false);
+  const msg = {
+    'not-allowed': '沒有取得麥克風權限。請點網址列左側的鎖頭圖示，把麥克風設為「允許」，再按重試。',
+    'service-not-allowed': '這個瀏覽器不允許使用語音辨識。請改用 Chrome 或 Edge，或改用手動輸入。',
+    'audio-capture': '找不到麥克風。請確認麥克風已接上，再按重試。',
+    'network': '語音辨識需要網路連線。請檢查網路後再重試。',
+    'start-failed': '語音辨識無法啟動。請重試，或改用手動輸入。'
+  }[code] || '語音辨識發生問題（' + code + '）。請重試，或改用手動輸入。';
+  const el = $('#recMsg'); if (!el) return;
+  const kept = R.base ? '<br>已辨識到的內容會保留，可以直接看結果。' : '';
+  el.innerHTML = `<div class="banner bad">${esc(msg)}${kept}<div class="actions" style="margin-top:10px"><button class="btn sm" data-act="retryRec">重試</button><button class="btn sm" data-act="manualRec">改用手動輸入</button>${R.base ? '<button class="btn sm primary" data-act="useKept">直接看結果</button>' : ''}</div></div>`;
+}
+function warmMic() {
+  if (!SR || !navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) return;
+  navigator.mediaDevices.getUserMedia({ audio: true }).then(s => s.getTracks().forEach(t => t.stop())).catch(() => { });
+}
+function stopAll() { clearInterval(P.tick); P.tick = null; recReset(); }
+
+function paintClock() {
+  const el = $('#clock'); if (!el) return;
+  const t = recElapsed(), it = cur(), bar = $('#bar'), sub = $('#clockSub');
+  el.textContent = fmt(Math.floor(t));
+  let w, pct, txt;
+  if (it.kind === 'p2') { const left = 120 - t; w = left <= 30; pct = t / 120; txt = w ? `剩下 ${Math.max(0, Math.ceil(left))} 秒，準備收尾` : '最長 2:00，講到 1 分半以上比較理想'; }
+  else { w = t >= 60; pct = t / 60; txt = t < 30 ? '建議回答 30 到 60 秒' : (w ? '已超過 60 秒，可以收尾了' : '長度剛好，講完就可以結束'); }
+  el.classList.toggle('warn', w); bar.classList.toggle('warn', w);
+  bar.firstElementChild.style.width = Math.min(100, pct * 100) + '%'; sub.textContent = txt;
+}
+
+/* ================= 狀態與流程 ================= */
+const S = { view: 'home', stage: null, sess: null, editing: false, hideZh: false, vq: '', manual: false };
+const cur = () => S.sess.items[S.sess.pos];
+const newItem = (kind, ref) => ({ kind, ref, text: '', dur: 0, done: false });
+const newId = () => Date.now().toString(36) + rand(1e6).toString(36);
+
+function startA() {
+  stopAll();
+  const d = draw(P2_IDS, K.seen2, S.sess && S.sess.card ? S.sess.card.id : null);
+  const c = CARD[d.id];
+  S.sess = { id: newId(), ts: Date.now(), mode: 'A', card: c, items: [newItem('p2', c)], pos: 0, queue: pickP3(c), notes: '' };
+  S.view = 'practice'; S.stage = 'card'; S.editing = false; render();
+  if (d.re) toast('Part 2 題庫已全部練完，重新洗牌！');
+}
+function startB() {
+  stopAll();
+  S.sess = { id: newId(), ts: Date.now(), mode: 'B', card: null, items: [], pos: -1, notes: '' };
+  S.view = 'practice'; nextB();
+}
+function nextB() {
+  const s = S.sess, last = s.items.length ? s.items[s.items.length - 1].ref.id : null;
+  const d = draw(P3_IDS, K.seen3, last);
+  s.items.push(newItem('p3', Q3[d.id])); s.pos = s.items.length - 1;
+  S.stage = 'ask'; S.editing = false; render();
+  if (d.re) toast('Part 3 題庫已全部練完，重新洗牌！');
+}
+function goPrep() {
+  warmMic(); S.stage = 'prep'; render();
+  P.t0 = Date.now();
+  P.tick = setInterval(() => {
+    const left = 60 - (Date.now() - P.t0) / 1000, el = $('#ptimer'), bar = $('#pbar');
+    if (el) { el.textContent = fmt(Math.ceil(Math.max(0, left))); el.classList.toggle('warn', left <= 10); }
+    if (bar) bar.firstElementChild.style.width = Math.min(100, (60 - left) / 60 * 100) + '%';
+    if (left <= 0) goSpeak();
+  }, 200);
+}
+function goSpeak(manual) {
+  const n = $('#notes'); if (n) S.sess.notes = n.value.trim();
+  clearInterval(P.tick); P.tick = null;
+  const it = cur(); S.manual = !!manual || !SR; S.stage = 'speak'; S.editing = false; render();
+  recBegin(it.kind === 'p2' ? 120 : 300, (text, dur) => {
+    it.text = text; it.dur = dur; it.done = true; commitItem(it);
+    S.stage = 'result'; S.editing = !text; render();
+  }, S.manual);
+}
+function commitItem(it) { if (it.text) markSeen(it.kind === 'p2' ? K.seen2 : K.seen3, [it.ref.id]); saveSession(); }
+function toP3() {
+  const s = S.sess; s.pos++;
+  if (s.pos > 3) { S.stage = 'summary'; render(); return; }
+  if (!s.items[s.pos]) { const q = s.queue[s.pos - 1]; SHOWN[K.seen3].add(q.id); s.items[s.pos] = newItem('p3', q); }
+  S.stage = 'ask'; S.editing = false; render();
+}
+
+/* ================= 畫面 ================= */
+function vrow(v, src) {
+  const k = lexKey(v[0]);
+  return `<div class="vrow"><div><b lang="en">${esc(v[0])}</b><span class="pos">${esc(v[1])}</span><span class="zh">${esc(v[2])}</span><div class="ex" lang="en">${esc(v[3])}</div>${src ? `<div class="src">來源：<span lang="en">${esc(src)}</span></div>` : ''}</div>${starBtn(k)}</div>`;
+}
+function hintsHTML(ref, kind, open) {
+  const starters = kind === 'p2' ? ref.s : [ref.s];
+  return `<details class="hint"${open ? ' open' : ''}><summary><span>💡 學習提示</span><small>思考角度、加分詞彙、參考開頭</small></summary><div class="hint-body">
+    <h4>思考角度</h4><ul>${ref.a.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+    ${ref.d ? `<h4>加深度的技巧</h4><p>${esc(ref.d)}</p>` : ''}
+    <h4>加分詞彙</h4><div class="vlist">${ref.v.map(v => vrow(v)).join('')}</div>
+    <h4>參考開頭</h4><ul class="starters">${starters.map(x => `<li lang="en">${esc(x)}</li>`).join('')}</ul>
+  </div></details>`;
+}
+const cueHTML = (c, compact) => `<article class="cue${compact ? ' compact' : ''}"><header><span class="eyebrow">Part 2 · Cue Card</span><span class="pill">${CAT[c.cat]}</span></header><h2 lang="en">${esc(c.t)}</h2><p class="say">You should say:</p><ul lang="en">${c.p.map(x => `<li>${esc(x)}</li>`).join('')}</ul></article>`;
+const qHTML = (q, label) => `<article class="qcard"><span class="eyebrow">${label}</span><h2 lang="en">${esc(q.t)}</h2><p class="from">延伸自題卡：<span lang="en">${esc(q.card.t)}</span></p></article>`;
+function partLabel() {
+  const s = S.sess, it = cur();
+  if (S.stage === 'summary') return '本次總結';
+  if (it.kind === 'p2') return 'Part 2';
+  return s.mode === 'A' ? `Part 3 · 第 ${s.pos} / 3 題` : `Part 3 · 第 ${s.pos + 1} 題`;
+}
+const itemBlock = (it, compact) => it.kind === 'p2' ? cueHTML(it.ref, compact) : qHTML(it.ref, partLabel());
+
+function viewHome() {
+  const s2 = store.get(K.seen2, []).filter(id => CARD[id]).length, s3 = store.get(K.seen3, []).filter(id => Q3[id]).length;
+  return `<div class="stack">
+  <section class="hero"><p class="eyebrow">IELTS Speaking · Part 2 &amp; Part 3</p><h1>開口練習，講完看得到自己說了什麼</h1><p class="lead">不重複的題庫、即時逐字稿，加上每題的思考角度與加分詞彙，目標口說 7.0 到 7.5。</p></section>
+  ${SR ? '' : '<div class="banner warn"><b>這個瀏覽器不支援語音辨識。</b>請改用電腦版 Chrome 或 Edge，才能自動產生逐字稿。現在仍可計時練習，逐字稿需要手動輸入。</div>'}
+  ${store.ok ? '' : '<div class="banner warn">瀏覽器目前無法儲存資料，練習進度、單字本和歷史紀錄在關閉頁面後不會保留。</div>'}
+  <div class="modes">
+    <button class="mode" data-act="startA"><span class="pill">模式 A</span><h2>Part 2 題卡，接著 3 題 Part 3</h2><p>抽一張題卡，準備 1 分鐘、講 2 分鐘，再回答 3 題延伸問題。最接近真實考試的流程。</p><span class="go">開始練習 →</span></button>
+    <button class="mode" data-act="startB"><span class="pill">模式 B</span><h2>Part 3 連續練習</h2><p>一題接一題的討論題，沒有題數上限。適合零碎時間，專門練觀點與論述。</p><span class="go">開始練習 →</span></button>
+  </div>
+  <section class="card"><h3 class="sec">題庫進度</h3><div class="prog">
+    <div class="prog-row"><span>Part 2</span><div class="meter"><i style="width:${s2 / P2_IDS.length * 100}%"></i></div><span class="fine">${s2} / ${P2_IDS.length}</span></div>
+    <div class="prog-row"><span>Part 3</span><div class="meter"><i style="width:${s3 / P3_IDS.length * 100}%"></i></div><span class="fine">${s3} / ${P3_IDS.length}</span></div>
+  </div><p class="fine" style="margin-top:12px">實際回答過的題目才會計入進度，之後不會重複出現。全部練完會自動重新洗牌。 <button class="btn ghost sm" data-act="resetSeen">重置進度</button></p></section>
+  <section class="card"><h3 class="sec">怎麼用</h3><ol class="steps">
+    <li><span>選一個模式，看到題目後先自己想，再決定要不要打開「學習提示」。</span></li>
+    <li><span>按開始作答並允許麥克風，用英文回答。畫面會即時顯示辨識到的文字。建議使用電腦版 Chrome 或 Edge。</span></li>
+    <li><span>講完後看逐字稿：綠色是你用到的加分詞彙，藍色是工具箱表達，底線是贅字和用太多次的字。</span></li>
+    <li><span>卡住時點右下角的「表達工具箱」，找一個比 and、because、I think 更好的說法，下一題用出來。</span></li>
+  </ol></section>
+  <p class="fine">隱私說明：語音辨識由瀏覽器處理（Chrome 會把音訊傳到 Google 的辨識服務）。這個網頁不會上傳或保存你的聲音，逐字稿、單字本和歷史紀錄只存在你自己的瀏覽器裡。數據僅供練習參考，不是 IELTS 官方評分。</p>
+  </div>`;
+}
+
+function viewPractice() {
+  const s = S.sess, it = cur();
+  const head = `<div class="phead"><span class="eyebrow">${s.mode === 'A' ? '模式 A' : '模式 B'} · ${partLabel()}</span><button class="btn ghost sm" data-act="quit">離開練習</button></div>`;
+  if (S.stage === 'card') return head + `<div class="stack">${cueHTML(s.card)}
+    <div class="actions"><button class="btn primary big" data-act="prep">開始準備（1 分鐘）</button><button class="btn" data-act="speakNow">直接開始作答</button><button class="btn ghost" data-act="startA">換一張</button></div>
+    ${hintsHTML(s.card, 'p2')}
+    <p class="fine">建議先自己想 10 秒再看提示。開始作答時瀏覽器會詢問麥克風權限，請選擇允許。</p></div>`;
+  if (S.stage === 'prep') return head + `<div class="stack">
+    <section class="card"><div class="timer-box"><div class="timer" id="ptimer">1:00</div><div class="timer-sub">準備時間。時間到會自動開始作答。</div></div><div class="bar" id="pbar"><i></i></div></section>
+    ${cueHTML(s.card, true)}
+    <textarea id="notes" rows="4" placeholder="筆記區：寫下關鍵字就好，不要寫完整句子。作答時會顯示在旁邊。">${esc(s.notes)}</textarea>
+    <div class="actions"><button class="btn primary" data-act="speakNow">跳過準備，開始作答</button></div>
+    ${hintsHTML(s.card, 'p2')}</div>`;
+  if (S.stage === 'ask') return head + `<div class="stack">${qHTML(it.ref, partLabel())}
+    <div class="actions"><button class="btn primary big" data-act="speakNow">開始作答</button>${s.mode === 'B' ? '<button class="btn ghost" data-act="swapQ">換一題</button>' : ''}</div>
+    ${hintsHTML(it.ref, 'p3')}
+    <p class="fine">Part 3 沒有準備時間。建議用「觀點、原因、例子、延伸」的順序，回答 30 到 60 秒。</p></div>`;
+  if (S.stage === 'speak') return head + `<div class="stack">
+    <section class="card"><div class="rec-line"><span class="dot" id="dot"></span><span id="recState">${S.manual ? '手動輸入模式' : '正在啟動麥克風，請允許權限…'}</span></div>
+      <div class="timer-box"><div class="timer" id="clock">0:00</div><div class="timer-sub" id="clockSub">&nbsp;</div></div><div class="bar" id="bar"><i></i></div></section>
+    ${itemBlock(it, true)}
+    ${it.kind === 'p2' && s.notes ? `<div class="notes-view"><b>我的筆記</b>${esc(s.notes)}</div>` : ''}
+    ${S.manual ? '<textarea class="en" id="manual" rows="7" placeholder="這個模式不會自動辨識。請開口回答，講完後把你說的內容打在這裡，再按結束作答。"></textarea>'
+      : '<div class="live" id="live" lang="en"><span class="ph">開始說話，這裡會即時顯示辨識到的文字。</span></div>'}
+    <div id="recMsg"></div>
+    <div class="actions"><button class="btn stop big" data-act="stop">結束作答</button></div>
+    ${hintsHTML(it.ref, it.kind)}</div>`;
+  if (S.stage === 'result') return head + viewResult();
+  return head + viewSummary();
+}
+
+function miniStats(an, dur) { return `${an.n} 字 · ${fmt(dur)} · ${an.wpm == null ? '—' : an.wpm + ' WPM'} · 贅字 ${an.strongN}`; }
+const LEGEND = `<div class="legend"><span><span class="m-vocab">加分詞彙</span></span><span><span class="m-tool">工具箱表達</span></span><span><span class="m-filler">贅字</span></span><span><span class="m-soft">口頭禪</span></span><span><span class="m-shallow">用太多次</span></span></div>`;
+
+function viewResult() {
+  const s = S.sess, it = cur(), an = analyze(it.text, it.dur, it.ref.v);
+  const pace = an.wpm == null ? ['', ''] : an.wpm < 110 ? ['warn', '偏慢，試著減少停頓'] : an.wpm > 160 ? ['warn', '偏快，注意清晰度'] : ['ok', '語速適中'];
+  const len = it.kind === 'p2' ? (it.dur < 60 ? ['warn', '偏短，目標 1 分半以上'] : it.dur < 90 ? ['', '可以再多講一點'] : ['ok', '長度足夠']) : (it.dur < 20 ? ['warn', '偏短，補上原因和例子'] : ['ok', '長度足夠']);
+  let nav;
+  if (s.mode === 'A' && it.kind === 'p2') nav = `<button class="btn primary big" data-act="toP3">繼續 Part 3 →</button><button class="btn" data-act="redo">重答這題</button><button class="btn ghost" data-act="startA">換下一張題卡</button>`;
+  else if (s.mode === 'A') nav = `<button class="btn primary big" data-act="toP3">${s.pos >= 3 ? '看本次總結 →' : '下一題 →'}</button><button class="btn" data-act="redo">重答這題</button>`;
+  else nav = `<button class="btn primary big" data-act="nextB">下一題 →</button><button class="btn" data-act="redo">重答這題</button><button class="btn ghost" data-act="finish">結束練習</button>`;
+
+  const body = S.editing
+    ? `<textarea class="en" id="editBox" rows="8" placeholder="在這裡輸入或修正你說的內容">${esc(it.text)}</textarea><div class="actions" style="margin-top:10px"><button class="btn primary sm" data-act="saveEdit">完成</button>${it.text ? '<button class="btn ghost sm" data-act="cancelEdit">取消</button>' : ''}</div>`
+    : `<div class="tscript" lang="en">${an.html}</div>${LEGEND}`;
+  const empty = !it.text && !S.manual ? `<div class="banner warn" style="margin-bottom:12px">這次沒有辨識到內容。請確認麥克風有收到聲音、說的是英文，並使用 Chrome 或 Edge。也可以直接在下面輸入你說的內容。</div>` : '';
+
+  const vocabCard = `<section class="card"><div class="card-h"><h3>本題加分詞彙</h3><span class="count">用了 ${an.usedN} / ${it.ref.v.length}</span></div>
+    <div class="chips">${it.ref.v.map((v, i) => `<span class="chip${an.used[i] ? ' on' : ''}" lang="en" title="${esc(v[2])}">${esc(v[0])}</span>`).join('')}</div>
+    <p class="fine" style="margin-top:10px">${an.usedN ? '綠色是你這次用出來的。灰色的下次挑一兩個試試。' : '這次還沒用到。重答時挑一兩個放進去，比一次全用更自然。'}</p></section>`;
+  const toolCard = `<section class="card"><div class="card-h"><h3>用到的工具箱表達</h3><span class="count">${an.tools.length} 個</span></div>
+    ${an.tools.length ? `<div class="chips">${an.tools.map(t => `<span class="chip tool" lang="en" title="${esc(t.title)}">${esc(t.p)}</span>`).join('')}</div>` : '<p class="fine">這次沒有用到。下一題試著放進一兩個，例如 That said、In my case、which means。</p>'}
+    <div class="actions" style="margin-top:12px"><button class="btn sm" data-act="tool">打開表達工具箱</button></div></section>`;
+  const fl = (arr) => arr.map(([w, c]) => `<b lang="en">${esc(w)}</b> ×${c}`).join('、');
+  const habitCard = `<section class="card"><div class="card-h"><h3>口頭習慣</h3></div>
+    ${an.shallow.length ? an.shallow.map(x => `<div class="shrow"><span class="w" lang="en">${esc(x.label)}<small>×${x.c}</small></span><span class="alts">可以換成 ${x.alt.map(a => `<b lang="en">${esc(a)}</b>`).join('、')}</span><button class="btn sm" data-act="tool" data-cat="${x.cat}">更多說法</button></div>`).join('') : '<p class="fine">沒有哪個字用得特別多，很好。</p>'}
+    ${an.strongN ? `<p style="margin-top:12px;font-size:14.5px">贅字：${fl(an.strong)}</p>` : ''}
+    ${an.softN ? `<p style="margin-top:6px;font-size:14.5px">口頭禪：${fl(an.soft)} <span class="fine">（不一定是缺點，留意頻率就好）</span></p>` : ''}
+    <p class="fine" style="margin-top:10px">Chrome 常會自動濾掉 um、uh，所以實際的贅字可能比這裡多。</p></section>`;
+
+  return `<div class="stack">${itemBlock(it, true)}
+    <div class="stats">
+      <div class="stat"><b>${an.n}</b><span>字數</span></div>
+      <div class="stat"><b>${fmt(it.dur)}</b><span>時長</span><em class="${len[0]}">${len[1]}</em></div>
+      <div class="stat"><b>${an.wpm == null ? '—' : an.wpm}</b><span>語速（每分鐘字數）</span><em class="${pace[0]}">${pace[1]}</em></div>
+      <div class="stat"><b>${an.strongN}</b><span>贅字</span>${an.softN ? `<em>另有口頭禪 ${an.softN} 次</em>` : ''}</div>
+    </div>
+    <section class="card"><div class="card-h"><h3>你說了什麼</h3>${S.editing ? '' : '<div class="actions"><button class="btn sm" data-act="edit">修正逐字稿</button><button class="btn sm" data-act="copy">複製</button></div>'}</div>
+      ${empty}${body}
+      <p class="fine" style="margin-top:10px">逐字稿由瀏覽器辨識，可能和你實際說的有落差。被聽錯的字，常常就是發音不夠清楚的字，值得留意。</p></section>
+    ${S.editing ? '' : vocabCard + toolCard + habitCard}
+    ${hintsHTML(it.ref, it.kind, true)}
+    <div class="actions">${nav}</div></div>`;
+}
+
+function viewSummary() {
+  const s = S.sess, done = s.items.filter(answered);
+  let W = 0, D = 0, Fn = 0, V = 0, VM = 0;
+  const rows = done.map(it => { const an = analyze(it.text, it.dur, it.ref.v); W += an.n; D += it.dur; Fn += an.strongN; V += an.usedN; VM += it.ref.v.length; return `<div class="sumrow"><span class="qq" lang="en">${esc(it.ref.t)}</span><span class="nums">${miniStats(an, it.dur)} · 詞彙 ${an.usedN}/${it.ref.v.length}</span></div>`; }).join('');
+  return `<div class="stack">
+    <section class="hero" style="padding-top:4px"><h1>${done.length ? '這次練完了' : '這次沒有完成任何題目'}</h1><p class="lead">${done.length ? '紀錄已經存到「歷史」，之後可以回來看每一題的逐字稿。' : '沒關係，隨時可以再開始。'}</p></section>
+    ${done.length ? `<div class="stats">
+      <div class="stat"><b>${done.length}</b><span>完成題數</span></div>
+      <div class="stat"><b>${W}</b><span>總字數</span></div>
+      <div class="stat"><b>${D >= 5 && W ? Math.round(W / (D / 60)) : '—'}</b><span>平均語速</span></div>
+      <div class="stat"><b>${V}/${VM}</b><span>加分詞彙</span></div></div>
+    <section class="card">${rows}</section>` : ''}
+    <div class="actions">${s.mode === 'A' ? '<button class="btn primary big" data-act="startA">再練一張題卡</button>' : '<button class="btn primary big" data-act="startB">繼續練 Part 3</button>'}<button class="btn" data-act="nav" data-to="history">看歷史紀錄</button><button class="btn ghost" data-act="nav" data-to="home">回首頁</button></div></div>`;
+}
+
+function toolCatHTML(c, prefix, open) {
+  return `<details class="tcat" id="${prefix}-${c.id}"${open ? ' open' : ''}><summary><b>${esc(c.title)}</b><small>${esc(c.when)}</small></summary><div class="tbody">
+    ${c.weak.length ? `<p class="weak">別只說：${c.weak.map(w => `<span lang="en">${esc(w)}</span>`).join('')}</p>` : ''}
+    <div class="vlist">${c.items.map(it => `<div class="vrow"><div><b lang="en">${esc(it[0])}</b> <span class="zh">${esc(it[1])}</span><div class="ex" lang="en">${esc(it[2])}</div></div>${starBtn(lexKey(cleanP(it[0])))}</div>`).join('')}</div>
+    <p class="tip">${esc(c.tip)}</p></div></details>`;
+}
+function viewToolbox() {
+  return `<div class="stack">
+  <section class="hero" style="padding-top:4px"><p class="eyebrow">表達工具箱</p><h1>遇到什麼情況，可以怎麼說</h1><p class="lead">不分題目都能用的口說表達，依情境整理。先看懂評分要什麼，再挑幾個放進自己的回答。</p></section>
+  <section class="card guide"><h3>7.0 到 7.5 的回答需要什麼</h3><ul>
+    <li><b>流暢與連貫：</b>能不費力地講出長段落，並靈活使用口語的連接與銜接語。對應下方的補充、原因、結果、轉折、敘事銜接。</li>
+    <li><b>詞彙：</b>用得出一些較少見的說法和慣用語，搭配詞用對，忘字時能換句話說。對應每題的加分詞彙和「換句話說」。</li>
+    <li><b>文法：</b>能混用複雜句，例如條件句、關係子句、完成式，而且多數句子沒有錯。對應「假設與推測」。</li>
+    <li><b>發音：</b>清楚、有語調起伏。這個工具無法評分，但逐字稿裡被聽錯的字可以當作線索。</li>
+    <li><b>7.0 和 7.5 的差別</b>不在於用更難的字，而在於用得更準、更自然，搭配錯誤更少。</li>
+  </ul></section>
+  <section class="card guide"><h3>三個常見的扣分習慣</h3><ul>
+    <li><b>背稿。</b>考官聽得出來。準備「想法和詞彙」，不要準備整段稿子。</li>
+    <li><b>把寫作連接詞搬到口說。</b>Moreover、Furthermore、In conclusion 在對話裡很不自然，請用下方的口語版本。</li>
+    <li><b>硬塞成語和難字。</b>用錯語境會扣分。一題用一個確定會用的，比塞三個不確定的好。</li>
+  </ul></section>
+  <section class="card guide"><h3>回答架構</h3>
+    <p><b>Part 2（講滿 2 分鐘）</b></p><div class="flow"><span>開場點題</span><i>→</i><span>依題卡要點講細節</span><i>→</i><span>一個具體場景</span><i>→</i><span>感受與反思</span></div>
+    <p style="margin-top:14px"><b>Part 3（每題 30 到 60 秒）</b></p><div class="flow"><span>觀點</span><i>→</i><span>原因</span><i>→</i><span>例子</span><i>→</i><span>延伸或讓步</span></div>
+    <div class="demo" lang="en"><i>Are people too dependent on technology?</i><br>To a large extent, yes.<mark>觀點</mark> The main reason is that we've handed over so many everyday tasks to our phones.<mark>原因</mark> In my case, I can't even remember my best friend's number.<mark>例子</mark> That said, I don't think it's entirely a bad thing, since it frees up our attention for other things.<mark>讓步</mark></div>
+  </section>
+  <section class="card guide"><h3>讓回答有深度的五個方向</h3><ul>
+    <li><b>過去與現在：</b>這件事以前是怎樣，現在有什麼不同？</li>
+    <li><b>個人與社會：</b>對我來說是這樣，對整個社會呢？</li>
+    <li><b>利與弊：</b>好處之外，有沒有代價？</li>
+    <li><b>原因與影響：</b>為什麼會這樣？接下來會導致什麼？</li>
+    <li><b>假設情境：</b>如果情況相反，會發生什麼事？</li>
+  </ul><p class="fine" style="margin-top:10px">回答卡住時，從這五個方向挑一個問自己，通常就能多講兩三句。</p></section>
+  <h3 class="sec" style="margin-top:28px">依情境查表達</h3>
+  ${TOOLBOX.map(c => toolCatHTML(c, 'p')).join('')}
+  </div>`;
+}
+
+function vocabListHTML() {
+  const q = S.vq.trim().toLowerCase();
+  const all = store.get(K.vocab, []);
+  const list = q ? all.filter(v => v.w.toLowerCase().includes(q) || v.zh.includes(q)) : all;
+  if (!all.length) return '<div class="empty">還沒有收藏的單字。<br>在「學習提示」或「工具箱」裡點 ☆，就會出現在這裡。</div>';
+  if (!list.length) return '<div class="empty">找不到符合的單字。</div>';
+  return `<section class="card"><div class="vlist">${list.map(v => vrow([v.w, v.pos, v.zh, v.ex], v.src)).join('')}</div></section>`;
+}
+function viewVocab() {
+  const n = store.get(K.vocab, []).length;
+  return `<div class="stack">
+  <section class="hero" style="padding-top:4px"><p class="eyebrow">單字本</p><h1>我收藏的詞彙 <span class="fine">${n} 個</span></h1></section>
+  <div class="tools-row"><input type="search" id="vq" placeholder="搜尋英文或中文" value="${esc(S.vq)}" aria-label="搜尋單字"><button class="btn sm" data-act="toggleZh">${S.hideZh ? '顯示中文' : '遮住中文自我測驗'}</button></div>
+  <div id="vlist" class="${S.hideZh ? 'hide-zh' : ''}">${vocabListHTML()}</div>
+  ${S.hideZh ? '<p class="fine">點一下灰色區塊可以看答案。</p>' : ''}</div>`;
+}
+
+function viewHistory() {
+  const h = store.get(K.hist, []);
+  const date = ts => new Date(ts).toLocaleString('zh-TW', { year: 'numeric', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+  return `<div class="stack">
+  <section class="hero" style="padding-top:4px"><p class="eyebrow">歷史紀錄</p><h1>我練過的題目 <span class="fine">${h.length} 筆</span></h1></section>
+  ${h.length ? h.map(rec => `<details class="hist"><summary><span><span class="meta">${date(rec.ts)} · ${rec.mode === 'A' ? '模式 A' : '模式 B'} · ${rec.items.length} 題</span><span class="ttl" lang="en">${esc(rec.mode === 'A' ? rec.title : rec.items[0].q)}</span></span></summary><div class="hist-body">
+      ${rec.items.map(it => { const ref = it.kind === 'p2' ? CARD[it.rid] : Q3[it.rid]; const an = analyze(it.text, it.dur, ref ? ref.v : []); return `<div class="hitem"><h4 lang="en">${it.kind === 'p2' ? 'Part 2' : 'Part 3'}：${esc(it.q)}</h4><div class="mini">${miniStats(an, it.dur)}${ref ? ` · 詞彙 ${an.usedN}/${ref.v.length}` : ''}</div><div class="tscript${it.text ? '' : ' empty'}" lang="en">${it.text ? an.html : '（沒有內容）'}</div></div>`; }).join('')}
+      <div class="actions"><button class="btn sm danger" data-act="delHist" data-id="${esc(rec.id)}">刪除這筆</button></div></div></details>`).join('')
+      + '<div class="actions"><button class="btn ghost sm danger" data-act="clearHist">清除全部紀錄</button></div>'
+      : '<div class="empty">還沒有練習紀錄。<br>完成一題之後，題目和逐字稿會自動存在這裡。</div>'}</div>`;
+}
+
+function render() {
+  $$('.nav button').forEach(b => b.classList.toggle('on', b.dataset.to === S.view || (S.view === 'practice' && b.dataset.to === 'home')));
+  const v = S.view;
+  $('#app').innerHTML = v === 'home' ? viewHome() : v === 'practice' ? viewPractice() : v === 'toolbox' ? viewToolbox() : v === 'vocab' ? viewVocab() : viewHistory();
+  $('#fab').hidden = v !== 'practice';
+  window.scrollTo(0, 0);
+}
+
+/* ================= 抽屜、提示訊息 ================= */
+function openDrawer(cat) {
+  const b = $('#drawerBody');
+  b.innerHTML = TOOLBOX.map(c => toolCatHTML(c, 'd', c.id === cat)).join('');
+  $('#drawer').hidden = false; $('#scrim').hidden = false;
+  const el = cat && $('#d-' + cat); if (el) el.scrollIntoView({ block: 'start' }); else b.scrollTop = 0;
+}
+function closeDrawer() { $('#drawer').hidden = true; $('#scrim').hidden = true; }
+let toastT;
+function toast(msg) { const t = $('#toast'); t.textContent = msg; t.classList.add('on'); clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove('on'), 2600); }
+function copyText(text) {
+  const done = () => toast('已複製逐字稿');
+  if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, fallback); else fallback();
+  function fallback() { const ta = document.createElement('textarea'); ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0'; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); done(); } catch (e) { toast('複製失敗，請手動選取文字'); } ta.remove(); }
+}
+
+/* ================= 事件 ================= */
+const ACT = {
+  nav(el) { stopAll(); closeDrawer(); S.view = el.dataset.to; S.stage = null; render(); },
+  quit() {
+    stopAll();
+    if (S.stage !== 'summary' && S.sess && S.sess.items.some(answered)) { S.stage = 'summary'; render(); return; }
+    S.view = 'home'; S.stage = null; render();
+  },
+  startA, startB, nextB, toP3,
+  prep: goPrep,
+  speakNow() { warmMic(); goSpeak(); },
+  stop: recStop,
+  retryRec() { goSpeak(); },
+  manualRec() { goSpeak(true); },
+  useKept() { R.on = false; finish(); },
+  swapQ() { S.sess.items.pop(); nextB(); },
+  redo() { const it = cur(); it.done = false; goSpeak(); },
+  finish() { S.stage = 'summary'; render(); },
+  edit() { S.editing = true; render(); const b = $('#editBox'); if (b) b.focus(); },
+  cancelEdit() { S.editing = false; render(); },
+  saveEdit() { const it = cur(); it.text = $('#editBox').value.trim(); S.editing = false; commitItem(it); render(); },
+  copy() { copyText(cur().text); },
+  tool(el) { openDrawer(el.dataset.cat); },
+  closeDrawer,
+  star(el) {
+    const k = el.dataset.k, on = toggleStar(k);
+    if (S.view === 'vocab' && !$('#drawer').contains(el)) { render(); return; }
+    $$('.star').filter(b => b.dataset.k === k).forEach(b => { b.classList.toggle('on', on); b.textContent = on ? '★' : '☆'; b.setAttribute('aria-pressed', on); b.title = on ? '取消收藏' : '收藏到單字本'; b.setAttribute('aria-label', b.title); });
+    toast(on ? '已收藏到單字本' : '已取消收藏');
+  },
+  toggleZh() { S.hideZh = !S.hideZh; render(); },
+  delHist(el) { store.set(K.hist, store.get(K.hist, []).filter(r => r.id !== el.dataset.id)); render(); toast('已刪除'); },
+  clearHist() { if (confirm('確定要清除全部歷史紀錄嗎？這個動作無法復原。')) { store.set(K.hist, []); render(); } },
+  resetSeen() { if (confirm('確定要重置題庫進度嗎？回答過的題目會重新出現。')) { store.set(K.seen2, []); store.set(K.seen3, []); SHOWN[K.seen2].clear(); SHOWN[K.seen3].clear(); render(); toast('題庫進度已重置'); } }
+};
+document.addEventListener('click', e => {
+  const zh = e.target.closest('.hide-zh .zh'); if (zh) { zh.classList.toggle('show'); return; }
+  const el = e.target.closest('[data-act]'); if (!el) return;
+  const fn = ACT[el.dataset.act]; if (fn) { if (el.closest('summary')) e.preventDefault(); fn(el, e); }
+});
+document.addEventListener('input', e => { if (e.target.id === 'vq') { S.vq = e.target.value; $('#vlist').innerHTML = vocabListHTML(); } });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
+
+render();
+</script>
+</body>
+</html>
